@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+<head>
+  <meta name="dtb:uid" content="urn:uuid:f95a4b42-7189-4f43-aabb-b0008fd6b8df" />
+  <meta name="dtb:depth" content="2" />
+  <meta name="dtb:totalPageCount" content="0" />
+  <meta name="dtb:maxPageNumber" content="0" />
+</head>
+<docTitle>
+  <text>Hack le livre</text>
+</docTitle>
+<navMap>
+  <navPoint id="navPoint1">
+    <navLabel>
+      <text>Hack le livre</text>
+    </navLabel>
+    <content src="Text/Titre.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint2">
+    <navLabel>
+      <text>Sommaire</text>
+    </navLabel>
+    <content src="Text/TabMat.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint3">
+    <navLabel>
+      <text>Introduction</text>
+    </navLabel>
+    <content src="Text/Intro.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint4">
+    <navLabel>
+      <text>Partie 1 – Un lourd héritage, Un piètre départ</text>
+    </navLabel>
+    <content src="Text/Part1.xhtml" />
+    <navPoint id="navPoint5">
+      <navLabel>
+        <text>EPUB 2 n’a pas connu un développement naturel</text>
+      </navLabel>
+      <content src="Text/Part1.xhtml#section-1" />
+    </navPoint>
+    <navPoint id="navPoint6">
+      <navLabel>
+        <text>L’uniformité</text>
+      </navLabel>
+      <content src="Text/Part1.xhtml#section-2" />
+    </navPoint>
+    <navPoint id="navPoint7">
+      <navLabel>
+        <text>Le flux</text>
+      </navLabel>
+      <content src="Text/Part1.xhtml#section-3" />
+    </navPoint>
+    <navPoint id="navPoint8">
+      <navLabel>
+        <text>L’architecture numérique</text>
+      </navLabel>
+      <content src="Text/Part1.xhtml#section-4" />
+    </navPoint>
+    <navPoint id="navPoint9">
+      <navLabel>
+        <text>Le code</text>
+      </navLabel>
+      <content src="Text/Part1.xhtml#section-5" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint10">
+    <navLabel>
+      <text>Partie 2 – Hacker est une nécessité</text>
+    </navLabel>
+    <content src="Text/Part2.xhtml" />
+    <navPoint id="navPoint11">
+      <navLabel>
+        <text>Déboguer</text>
+      </navLabel>
+      <content src="Text/Part2.xhtml#section-1" />
+    </navPoint>
+    <navPoint id="navPoint12">
+      <navLabel>
+        <text>Le hack n’est pas que technique</text>
+      </navLabel>
+      <content src="Text/Part2.xhtml#section-2" />
+    </navPoint>
+    <navPoint id="navPoint13">
+      <navLabel>
+        <text>Nous sommes tous une start-up</text>
+      </navLabel>
+      <content src="Text/Part2.xhtml#section-3" />
+    </navPoint>
+    <navPoint id="navPoint14">
+      <navLabel>
+        <text>Le hack éditorial</text>
+      </navLabel>
+      <content src="Text/Part2.xhtml#section-4" />
+    </navPoint>
+    <navPoint id="navPoint15">
+      <navLabel>
+        <text>Le hack commercial</text>
+      </navLabel>
+      <content src="Text/Part2.xhtml#section-5" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint16">
+    <navLabel>
+      <text>Partie 3 – Repenser</text>
+    </navLabel>
+    <content src="Text/Part3.xhtml" />
+    <navPoint id="navPoint17">
+      <navLabel>
+        <text>Hacker le livre numérique ?</text>
+      </navLabel>
+      <content src="Text/Part3.xhtml#section-1" />
+    </navPoint>
+    <navPoint id="navPoint18">
+      <navLabel>
+        <text>Certains le font déjà…</text>
+      </navLabel>
+      <content src="Text/Part3.xhtml#section-2" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint19">
+    <navLabel>
+      <text>Conclusion</text>
+    </navLabel>
+    <content src="Text/Conclusion.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint20">
+    <navLabel>
+      <text>L’auteur</text>
+    </navLabel>
+    <content src="Text/Auteur.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint21">
+    <navLabel>
+      <text>Éditorial, design, hack</text>
+    </navLabel>
+    <content src="Text/Prom.xhtml" />
+  </navPoint>
+</navMap>
+</ncx>

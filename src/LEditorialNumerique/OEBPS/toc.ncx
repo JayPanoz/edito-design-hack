@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+<head>
+  <meta name="dtb:uid" content="urn:uuid:de22666c-f39a-40f7-b3a0-092a259bab52" />
+  <meta name="dtb:depth" content="3" />
+  <meta name="dtb:totalPageCount" content="0" />
+  <meta name="dtb:maxPageNumber" content="0" />
+</head>
+<docTitle>
+  <text>L’éditorial numérique</text>
+</docTitle>
+<navMap>
+  <navPoint id="navPoint1">
+    <navLabel>
+      <text>L’éditorial numérique</text>
+    </navLabel>
+    <content src="Text/Titre.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint2">
+    <navLabel>
+      <text>Sommaire</text>
+    </navLabel>
+    <content src="Text/TabMat.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint3">
+    <navLabel>
+      <text>Introduction</text>
+    </navLabel>
+    <content src="Text/Intro.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint4">
+    <navLabel>
+      <text>Partie 1 – La grande transition numérique</text>
+    </navLabel>
+    <content src="Text/Part1.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint5">
+    <navLabel>
+      <text>Section 1 – La lente faillite des « modèles acquis »</text>
+    </navLabel>
+    <content src="Text/Section1-1.xhtml" />
+    <navPoint id="navPoint6">
+      <navLabel>
+        <text>The Daily, un échec, des enseignements</text>
+      </navLabel>
+      <content src="Text/Section1-1.xhtml#section-1" />
+    </navPoint>
+    <navPoint id="navPoint7">
+      <navLabel>
+        <text>Le Web, le concurrent</text>
+      </navLabel>
+      <content src="Text/Section1-1.xhtml#section-2" />
+    </navPoint>
+    <navPoint id="navPoint8">
+      <navLabel>
+        <text>Subcompact Publishing</text>
+      </navLabel>
+      <content src="Text/Section1-1.xhtml#section-3" />
+    </navPoint>
+    <navPoint id="navPoint9">
+      <navLabel>
+        <text>Devenir une start-up</text>
+      </navLabel>
+      <content src="Text/Section1-1.xhtml#section-4" />
+    </navPoint>
+    <navPoint id="navPoint10">
+      <navLabel>
+        <text>La meilleure expérience de lecture possible</text>
+      </navLabel>
+      <content src="Text/Section1-1.xhtml#section-5" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint11">
+    <navLabel>
+      <text>Section 2 – Les nouveaux modèles</text>
+    </navLabel>
+    <content src="Text/Section1-2.xhtml" />
+    <navPoint id="navPoint12">
+      <navLabel>
+        <text>Les singles</text>
+      </navLabel>
+      <content src="Text/Section1-2.xhtml#section-1" />
+    </navPoint>
+    <navPoint id="navPoint13">
+      <navLabel>
+        <text>Séries</text>
+      </navLabel>
+      <content src="Text/Section1-2.xhtml#section-2" />
+    </navPoint>
+    <navPoint id="navPoint14">
+      <navLabel>
+        <text>Long form</text>
+      </navLabel>
+      <content src="Text/Section1-2.xhtml#section-3" />
+    </navPoint>
+    <navPoint id="navPoint15">
+      <navLabel>
+        <text>Niches</text>
+      </navLabel>
+      <content src="Text/Section1-2.xhtml#section-4" />
+    </navPoint>
+    <navPoint id="navPoint16">
+      <navLabel>
+        <text>Send to</text>
+      </navLabel>
+      <content src="Text/Section1-2.xhtml#section-5" />
+    </navPoint>
+    <navPoint id="navPoint17">
+      <navLabel>
+        <text>Livre–outil</text>
+      </navLabel>
+      <content src="Text/Section1-2.xhtml#section-6" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint18">
+    <navLabel>
+      <text>Conclusion – La publication compacte</text>
+    </navLabel>
+    <content src="Text/Conclusion1.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint19">
+    <navLabel>
+      <text>Partie 2 – Le livre enrichi : prochain pas vers le Web</text>
+    </navLabel>
+    <content src="Text/Part2.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint20">
+    <navLabel>
+      <text>Section 1 – Qu’est-ce qu’un livre enrichi ?</text>
+    </navLabel>
+    <content src="Text/Section2-1.xhtml" />
+    <navPoint id="navPoint21">
+      <navLabel>
+        <text>Précision lexicale</text>
+      </navLabel>
+      <content src="Text/Section2-1.xhtml#section-1" />
+    </navPoint>
+    <navPoint id="navPoint22">
+      <navLabel>
+        <text>La palette des possibles</text>
+      </navLabel>
+      <content src="Text/Section2-1.xhtml#section-2" />
+      <navPoint id="navPoint23">
+        <navLabel>
+          <text>La vidéo et l’audio</text>
+        </navLabel>
+        <content src="Text/Section2-1.xhtml#subsection-1" />
+      </navPoint>
+      <navPoint id="navPoint24">
+        <navLabel>
+          <text>Les animations CSS 3</text>
+        </navLabel>
+        <content src="Text/Section2-1.xhtml#subsection-2" />
+      </navPoint>
+      <navPoint id="navPoint25">
+        <navLabel>
+          <text>Le Javascript</text>
+        </navLabel>
+        <content src="Text/Section2-1.xhtml#subsection-3" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint26">
+      <navLabel>
+        <text>Restriction du champ des possibles</text>
+      </navLabel>
+      <content src="Text/Section2-1.xhtml#section-3" />
+    </navPoint>
+    <navPoint id="navPoint27">
+      <navLabel>
+        <text>Faire de l’enrichi : pourquoi ?</text>
+      </navLabel>
+      <content src="Text/Section2-1.xhtml#section-4" />
+      <navPoint id="navPoint28">
+        <navLabel>
+          <text>La non-fiction</text>
+        </navLabel>
+        <content src="Text/Section2-1.xhtml#subsection-4" />
+      </navPoint>
+      <navPoint id="navPoint29">
+        <navLabel>
+          <text>La fiction</text>
+        </navLabel>
+        <content src="Text/Section2-1.xhtml#subsection-5" />
+      </navPoint>
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint30">
+    <navLabel>
+      <text>Section 2 – Éditeur de livre enrichi : un nouveau métier</text>
+    </navLabel>
+    <content src="Text/Section2-2.xhtml" />
+    <navPoint id="navPoint31">
+      <navLabel>
+        <text>Les barrières à franchir</text>
+      </navLabel>
+      <content src="Text/Section2-2.xhtml#section-1" />
+      <navPoint id="navPoint32">
+        <navLabel>
+          <text>Un coût de production accru </text>
+        </navLabel>
+        <content src="Text/Section2-2.xhtml#subsection-1" />
+      </navPoint>
+      <navPoint id="navPoint33">
+        <navLabel>
+          <text>Comment vendre un livre enrichi ?</text>
+        </navLabel>
+        <content src="Text/Section2-2.xhtml#subsection-2" />
+      </navPoint>
+      <navPoint id="navPoint34">
+        <navLabel>
+          <text>Le poids des fichiers qui s’envole</text>
+        </navLabel>
+        <content src="Text/Section2-2.xhtml#subsection-3" />
+      </navPoint>
+      <navPoint id="navPoint35">
+        <navLabel>
+          <text>Le design de l’enrichi</text>
+        </navLabel>
+        <content src="Text/Section2-2.xhtml#subsection-4" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint36">
+      <navLabel>
+        <text>Les avantages à se pencher dès aujourd’hui sur le numérique enrichi</text>
+      </navLabel>
+      <content src="Text/Section2-2.xhtml#section-2" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint37">
+    <navLabel>
+      <text>Conclusion – Le Web, ce futur possible de l’enrichi</text>
+    </navLabel>
+    <content src="Text/Conclusion2.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint38">
+    <navLabel>
+      <text>Les auteurs</text>
+    </navLabel>
+    <content src="Text/Auteur.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint39">
+    <navLabel>
+      <text>Éditorial, Design, Hack</text>
+    </navLabel>
+    <content src="Text/Prom.xhtml" />
+  </navPoint>
+</navMap>
+</ncx>

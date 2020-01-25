@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+  <title>Partie 2 – Le langage de design du livre numérique</title>
+  <link href="../Styles/Styles-essai.css" type="text/css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+</head>
+
+<body epub:type="bodymatter" lang="fr" xml:lang="fr">
+  <section epub:type="chapter" aria-labelledby="heading-1" role="doc-chapter">
+    <h1 id="heading-1">Partie 2<br/>
+      Le langage de design du livre&#160;numérique</h1>
+
+    <p id="para-1">Marier le livre et le Web, voici notre défi.</p>
+
+    <p id="para-2">De prime abord, cela peut paraître difficile voire impossible, sinon en introduisant les pratiques du livre dans le Web. Mais le fait est que si nous construisons un langage aux bases solides, alors nous nous donnerons au moins les chances de réussir. Le livre numérique empruntant les langages interprétés du Web (HTML, CSS et Java­Script), il en emprunte aussi les fondements. Le plus important est de considérer le contenu comme un flux qui n’est pas par nature fixé à l'écran. Bien sûr, les outils pour «&#160;fixer&#160;» le contenu existent, et ils ont été largement utilisés ces dernières années, tellement utilisés que l’on ne pensait plus qu'à designer avec eux. En réalité, le Web en est revenu et ne pense aujourd’hui qu’au <i>Responsive Design,</i> ou design adaptatif, une conception qui vise à offrir la meilleure consultation et navigation possibles à l’utilisateur sur une large gamme d’appareils (ordinateur, tablettes, smartphones, TV, etc.)&#160;; le Web n’a pas pu aller contre nature bien longtemps. Or, nous avons les mêmes problématiques et ne pensons plus qu'à fixer le contenu dans le domaine du livre numérique aujourd’hui, arguant qu’il est impossible de convertir certaines mises en pages en flux<a href="#note-6" id="appel-6" class="appel" epub:type="noteref" role="doc-noteref">[6]</a>.</p>
+
+    <p id="para-3">Force est de constater que nous n’avons pas appris des erreurs d’autres — qui sont déjà passés par cette problématique — et que nous allons droit dans le mur. C’est pour cette raison qu’il nous faut inventer nos propres pratiques et remettre en cause notre manière de créer des livres pour le numérique dès maintenant. Cela ne sert à rien de refuser la nature même du livre numérique, nous ne ferons que perdre du temps.</p>
+
+    <figure class="image-caption" id="fig-1">
+      <img src="../Images/RWD.jpg" alt="Exemple de Responsive Web Design, la mise en page s'adapte aux différents appareils pour offrir le meilleur confort de consultation possible"/>
+
+      <figcaption class="legende">Le Responsive Web Design est une tendance forte… mais ce n’est qu’un retour aux fondamentaux du&#160;Web.</figcaption>
+    </figure>
+
+    <section aria-labelledby="section-1">
+    <h2 id="section-1">Les bases du&#160;langage</h2>
+
+    <p id="para-4">Pour créer un langage facile à comprendre, évolutif et solide, nous devons designer avec ce dont nous <em>disposons,</em> pas avec ce que nous <em>souhaiterions</em> avoir. Il est tout à fait possible d’imaginer quelque chose de simple autour des fonctionnalités, contraintes et possibilités techniques actuelles.</p>
+
+    <p id="para-5">Vouloir chambouler la forme du livre parce qu’il passe dans le numérique peut être intéressant, mais il n’en reste pas moins que cet objectif est voué à créer de simples exceptions et non pas des règles<a href="#note-7" id="appel-7" class="appel" epub:type="noteref" role="doc-noteref">[7]</a>. En réalité, même ces exceptions ont besoin de se reposer sur le socle commun que nous aspirons à construire, en allant contre ces règles.</p>
+
+    <p id="para-6">Nous n’avons pas besoin d’un ensemble de bases complexes, nous n’en avons réellement besoin que de deux.</p>
+
+    <h3 id="subsection-1" title="1. Le livre numérique est un flux paginé"><span aria-hidden="true">•</span> 1. Le livre numérique est un flux&#160;paginé</h3>
+
+    <p id="para-7">Qu’il soit fluide ou fixe, le contenu est organisé en pseudo–pages, à savoir l’écran.<a href="#note-8" id="appel-8" class="appel" epub:type="noteref" role="doc-noteref">[8]</a></p>
+
+    <p id="para-8">L’idée est très simple&#160;: il faut préalablement accepter de construire un langage dans ce cadre, la pseudo–page, sinon nous perdrons les utilisateurs qui y sont habitués. Avant de vouloir révolutionner la forme du livre, il faut perfectionner le modèle connu des lecteurs. Il leur est plus facile de laisser le logiciel gérer le flux de contenu que de le faire défiler manuellement.</p>
+
+    <p id="para-9">Notre problématique est donc de gérer la pagination d’un flux (<i>reflowable text</i>). Nous ne pouvons reprendre les techniques de mise en pages papier<a href="#note-9" id="appel-9" class="appel" epub:type="noteref" role="doc-noteref">[9]</a> ou Web, il nous faut en inventer de nouvelles.</p>
+
+    <p id="para-10">La tâche n’est pas forcément complexe, mais elle requiert de changer nos habitudes, ce qui peut être particulièrement difficile, d’autant que cela demande une certaine expertise technique&#160;: maîtrise des styles de présentation CSS et connaissance profonde des moteurs de rendu qui permettent aux logiciels de les interpréter. Pour autant, il suffit de connaître quelques propriétés et quelques techniques pour atteindre le résultat escompté.</p>
+
+    <p id="para-11">Nous ne devons pas considérer l’écran uniquement comme une pseudo–page mais aussi comme une carte, une fiche cartonnée — repensons aux cartes-mémoire ou cartes d’apprentissage. Nous utilisons ces fiches pour apprendre, elles font passer une (ou des) information(s). Il paraît donc logique de les détourner pour le livre numérique. En vérité, cette conception va même nous aider à organiser le flux.</p>
+
+    <figure class="image-caption" id="fig-2">
+      <img src="../Images/Cartes-slides.jpg" alt="Exemples de cartes"/>
+
+      <figcaption class="legende">Les citations, illustrations et encadrés peuvent être pensés comme des&#160;cartes.</figcaption>
+    </figure>
+
+    <p id="para-12">Pour le roman, la question ne se pose pas vraiment, nous n’utiliserons que très rarement ces cartes. Mais pour de la non-fiction, elles peuvent grandement nous simplifier le travail.</p>
+
+    <p id="para-13">La carte doit servir les fonctions d’intégrité, de cohérence ou de logique du discours. On cherchera par exemple à garder deux éléments intimement reliés, une citation ou un encadré sur un seul et même écran. En contrepartie, nous devons accepter les espaces blancs (<i>whitespace</i>).</p>
+
+    <p id="para-14">Toute pseudo–page numérique n’a donc pas pour vocation d’être entièrement remplie. Cela peut sembler peu naturel, surprenant voire contre-productif de prime abord, mais nous devons absolument apprendre à composer avec cette idée en tête. Puisque le flux est contenu dans une seule colonne, il est difficile de mettre en place un parcours de lecture à plusieurs niveaux&#160;: il ne nous est pas réellement possible d’extraire des éléments de ce flux continu.</p>
+
+    <p id="para-15">Aussi, nous considérerons le flux comme une partition dont le designer est le chef d’orchestre&#160;: il doit gérer le tempo (rythme vertical et horizontal), recourir à des pauses pour souligner l’importance de l’information (espace blanc avant une carte) et recourir à des montées en puissance (citation faisant office de point d’ancrage dans l’articulation du texte). Le plus grand risque est bien évidemment de trop morceler le contenu et d’en rendre la lecture pénible.</p>
+
+    <figure class="image-caption" id="fig-3">
+      <img src="../Images/SwissEbookDesign.jpg" alt="Le swiss ebook design est très simple en réalité"/>
+
+      <figcaption class="legende">En considérant le contenu comme un ensemble de blocs, il est très facile de bâtir une mise en pages&#160;numérique.</figcaption>
+    </figure>
+
+    <p id="para-16">Il convient donc de bâtir une architecture de l’information, ce qui est plutôt facile puisque le langage HTML permet de structurer facilement, donc de souligner une cohérence, de garder l’intégrité de certains passages (en utilisant des divisions ou des marqueurs sémantiques). Nous pourrons alors rajouter une structure (pseudo-grille) dans laquelle empiler ces blocs et groupes de blocs HTML. Fort logiquement, nous n’utiliserons pas les grilles connues et utilisées en papier telles quelles, il faudra les adapter, les réinventer ou simplement s’en inspirer.</p>
+
+    <h3 id="subsection-2" title="2. Le contenu est une interface"><span aria-hidden="true">•</span> 2. Le contenu est une&#160;interface</h3>
+
+    <p id="para-17">Notre première base nous aide à distribuer le contenu dans l’écran. Or, mettre en pages consiste à disposer ce contenu afin de le représenter de manière hiérarchique et harmonieuse. L’objectif est d’en faciliter la lecture, avec un souci d’ergonomie. Pour ce faire, on utilise les techniques de typographie, d’espacement, de titrage, d’illustration, etc.</p>
+
+    <p id="para-18">Une bonne mise en pages permet au lecteur de se repérer, de se retrouver et d’appréhender le contenu en un coup d’œil.</p>
+
+    <p id="para-19">Un soin particulier doit bien évidemment être porté sur ces techniques en numérique, mais il faut veiller à penser en unités relatives pour le flux. Adieu pixels et points, bonjour «&#160;em&#160;» et pourcentages. De plus, composer en pixels et points génère des bogues&#160;: l’utilisateur ne pourra par exemple plus modifier la taille de caractères sur une grande partie des appareils et logiciels de lecture.</p>
+
+    <p id="para-20">Mais il faut également prendre en compte que le livre numérique, en entrant dans le domaine logiciel, impose une interface utilisateur, qui permet des échanges entre l’humain et la machine. Ce travail peut sembler la chasse gardée des développeurs de liseuses et logiciels, mais il n’en est rien. Nous pouvons créer une interface spécifique au livre dans l’interface générique du logiciel.</p>
+
+    <p id="para-21">Comment&#160;?</p>
+
+    <p id="para-22">Il nous faut considérer le contenu comme une interface.</p>
+
+    <figure class="image" id="fig-4"><img src="../Images/lien.jpg" alt="L'hyperlien HTML est la réponse"/></figure>
+
+    <p id="para-23">Techniquement, il est très aisé de transformer le contenu en interface puisque nous disposons des hyperliens. Aussi, ce qui peut être lié doit être lié&#160;: appels et notes de bas de page, table des matières, index, liens internes et externes, etc. Nous parlerons ici d’<em>interface naturelle</em> du livre numérique dans le sens où nous ne faisons que lier techniquement ce qui est lié fonctionnellement dans un livre papier. Cette interface naturelle est absolument nécessaire à l’expérience utilisateur.</p>
+
+    <p id="para-24">Avec un peu d’imagination, il est possible de designer pour les usages de l’écran. Si le contenu le permet (passages renvoyant à d’autres passages suffisamment nombreux), les liens internes, qui sont soulignés et en couleur par défaut, peuvent très bien être utilisés pour mettre des idées en exergue, ce qui permettra aux lecteurs de scanner le contenu plus facilement. <span id="gras-italique">Ces liens seront ici détournés pour servir la fonction de l’italique ou du gras.</span> On ne liera plus un seul mot, mais un propos. Bien évidemment, cela nécessite un certain travail éditorial.</p>
+
+    <p id="para-25">De même, pour le livre enrichi, pourquoi ne pas utiliser la table des matières pour permettre à l’utilisateur de directement accéder aux morceaux audio, vidéos ou quiz&#160;? Il nous suffira de la compléter avec des liens sous une section dédiée — un peu à l’image d’un menu «&#160;Bonus&#160;» de DVD.</p>
+
+    <figure class="image-height" id="fig-5">
+      <img src="../Images/Interfacebook.jpg" alt="Ajouter une interface dans le livre permet de bâtir une meilleure expérience utilisateur"/>
+    </figure>
+
+    <p id="para-26">Dans certains cas, il peut être utile de pousser le design encore plus loin et de créer une <em>interface propre au livre.</em> Ce type d’interface équivaut à l’interface d’un site Web.</p>
+
+    <p id="para-27">L’objectif est de mener une réflexion poussée sur l’expérience utilisateur et de redéfinir en partie la forme du livre numérique, en intégrant directement dans le contenu des éléments de navigation.</p>
+
+    <p id="para-28">On pourra par exemple bâtir un système mécanique d’aller-retour afin de faciliter la consultation non linéaire du contenu. Le sommaire pourra alors être utilisé comme une page d’accueil, les différentes sections comme des pages Web. Il suffira d’un simple bouton «&#160;précédent&#160;» dans chaque section afin d’inviter le lecteur à revenir au sommaire. Un tel système peut être intéressant puisqu’il permet aux utilisateurs de ne pas avoir à aller chercher la table des matières dans les menus du logiciel, ce qui crée une coupure dans le flux de lecture — cette table des matières est parfois tellement peu accessible que les lecteurs ne l’utilisent pas. L’exercice se prête particulièrement à la non-fiction, le lecteur pouvant plus facilement revenir vers le contenu s’il en ressent le besoin. Cela n’est pas forcément coûteux en termes esthétiques puisqu’une simple flèche «&#160;précédent&#160;» devant le titre de la section fera l’affaire.</p>
+
+    <p id="para-29">L’interface propre au livre se propose de répondre à certaines problématiques cognitives du numérique&#160;: les gens éprouvent des difficultés à naviguer dans le livre numérique, ils scannent le contenu et ne le lisent qu’une seule fois, etc.</p>
+
+    <figure class="image" id="fig-6">
+      <img src="../Images/schema-Interfaces.jpg" alt="Les trois types d'interface du livre numérique"/>
+    </figure>
+
+    <p id="para-30">Récapitulons. Nous disposons de trois types d’interfaces&#160;:</p>
+
+    <ol id="para-31">
+      <li>l’interface <em>générique,</em> imposée&#160;;</li>
+
+      <li>l’interface <em>naturelle,</em> nécessaire&#160;;</li>
+
+      <li>l’interface <span class="bloc">«&#160;<em>livre</em>&#160;»,</span> optionnelle.</li>
+    </ol>
+
+    <p id="para-32">Il est donc critique de considérer le contenu comme une interface afin de rendre ces trois interfaces compatibles. L’interface générique déborde par exemple dans l’interface naturelle puisque les hyperliens, utilisés pour l’interface naturelle, se voient appliquer des styles par défaut. Et il est bien sûr hors de question de dupliquer des fonctions déjà existantes dans l’interface générique en designant une interface «&#160;livre&#160;», nous ne ferions que créer du bruit et donc parasiter la lecture.</p>
+
+    <p id="para-33">Notons que nous pouvons également dupliquer des fonctions sans nous en rendre compte, en insérant par exemple un lien Wikipedia dans le texte (interface naturelle) alors que l’interface générique permet d’exécuter une recherche Wikipedia sur n’importe quel mot. Il conviendra donc de se demander si cette fonctionnalité est suffisamment connue des utilisateurs pour faire l’économie d’un lien. Certains designers Web, par exemple, n’hésitent pas à intégrer une fonctionnalité de réglage de taille de caractères directement à leur site alors que cette fonctionnalité est déjà prise en charge par les navigateurs Web.</p>
+
+    <p id="para-34">En vérité, tout est question d’expérience utilisateur.</p>
+    </section>
+
+    <section aria-labelledby="section-2">
+    <h2 id="section-2">Les principes</h2>
+
+    <p id="para-35">La mise en pages papier demandait déjà de réfléchir l’interface et l’expérience utilisateur. Ce n’est donc pas quelque chose de nouveau, mais nous devons réellement surexposer ces deux concepts, intimement liés, afin d’adapter les techniques existantes et d’en créer de nouvelles pour le numérique. Considérer les techniques du papier utilisables telles quelles n’engendrera rien de bon<a href="#note-10" id="appel-10" class="appel" epub:type="noteref" role="doc-noteref">[10]</a>&#160;; rien n’est encore acquis en numérique.</p>
+
+    <p id="para-36">Aussi, nous allons imaginer nos principes de design en considérant que l’expérience utilisateur est notre objectif le plus important<a href="#note-11" id="appel-11" class="appel" epub:type="noteref" role="doc-noteref">[11]</a>. Il ne sera ainsi pas difficile de créer des mises en pages belles et fonctionnelles.</p>
+
+    <p id="para-37">S’il est vrai que l’esthétique crée la première impression, la fonctionnalité est ce qui construit l’expérience utilisateur. Si les utilisateurs se voient proposer une bonne expérience de lecture, ils seront plus enclins à revenir vers le texte et, surtout, faire confiance à l’éditeur qui met un point d’honneur à les valoriser.</p>
+
+    <h3 id="subsection-3" title="1. Anticiper les erreurs, évacuer la frustration de l’utilisateur"><span aria-hidden="true">•</span> 1. Anticiper les erreurs, évacuer la frustration de&#160;l’utilisateur</h3>
+
+    <p id="para-38">L’expérience utilisateur se joue sur de nombreux détails. Si nous n’y portons pas une grande attention et que nous nous ratons sur un seul petit détail, qui peut paraître dérisoire, c’est toute l’expérience utilisateur qui peut se retrouver dégradée.</p>
+
+    <p id="para-39">Prenons quelques exemples pour expliquer à quel point ces détails sont de véritables enjeux.</p>
+
+    <p id="para-40">Imaginons que les liens soient peu ou pas accessibles. Nous pensons ici aux appels de notes en exposant ou aux éléments de navigation (icônes, textes) pas suffisamment grands. Si le lecteur doit s’y reprendre à plusieurs fois avant d’atteindre ce lien, il y a de grandes chances qu’on ne l’y reprenne plus parce qu’il sera frustré, voire irrité. Résultat&#160;: l’interface devient inutile. Nous savons que les appels de note en exposant sont une règle typographique, mais celle-ci doit être remise en cause pour le numérique car ces appels deviennent quasiment inaccessibles sur la majorité des liseuses<a href="#note-12" id="appel-12" class="appel" epub:type="noteref" role="doc-noteref">[12]</a> et quelques applications. Il faut donc les intégrer différemment.</p>
+
+    <p id="para-41">Intéressons-nous maintenant aux livres disposant de liens internes et externes. Si nous ne les différencions pas, alors le lecteur ne pourra pas savoir ce qu’il va déclencher au tapotant sur un lien. Sera-t-il amené à une autre section du livre ou sur une page Web en dehors de l’application de lecture&#160;? Être bouté hors de l’application sera vécu comme une erreur, mais rien n’aura été fait pour que l’utilisateur puisse ne pas se tromper. Il devra rouvrir son application, son flux de lecture sera rompu. Il hésitera logiquement à consulter un autre lien ensuite alors qu’une information intéressante pourrait se trouver à l’autre bout.</p>
+
+    <p id="para-42">Enfin, observons les fonctionnalités ajoutées à un livre numérique, que l’on intègre généralement avec du code Java­Script. Si ces fonctionnalités entrent en conflit avec l’interface générique, alors nous créons des parasites. Pour peu que cette fonctionnalité demande un usage fréquent, le confort de lecture se dégradera. C’est malheureusement ce qui se passe avec l’application Apple <span class="bloc">iBooks</span> et il n’existe pour le moment aucun moyen de désactiver le comportement des gestuelles au besoin. Résultat, chaque fois que la fonctionnalité est appelée par le lecteur, les menus de l’interface du logiciel apparaissent ou disparaissent, ce qui n’est pas voulu.</p>
+
+    <figure class="image-caption" id="fig-7">
+      <img src="../Images/PageTitre.jpg" alt="La Page titre d'un livre numérique peut très bien devenir une page d'accueil" class="w70"/>
+
+      <figcaption class="legende">Cette page titre vous choque-t-elle&#160;?</figcaption>
+    </figure>
+
+    <h3 id="subsection-4" title="2. Maintenir des standards"><span aria-hidden="true">•</span> 2. Maintenir des&#160;standards</h3>
+
+    <p id="para-43">Doit-on garder la forme du livre ou, au contraire, chercher à le révolutionner&#160;?</p>
+
+    <p id="para-44">Si les revendeurs et développeurs numériques s’évertuent à se rapprocher le plus possible du livre papier, ce n’est pas pour rien&#160;: il faut que l’abstrait numérique ressemble le plus possible à l’objet matériel afin que les lecteurs puissent transiter dans la sphère numérique sans déployer d’efforts significatifs. N’oublions pas que nous sommes dans une période de conquête et que la raison l’emporte sur l’innovation. Une app–livre qui présente le contenu d’une manière totalement différente du livre papier peut-elle encore être perçue comme un livre, ou est-ce autre chose&#160;?</p>
+
+    <p id="para-45">La problématique est de savoir ce qui peut être considéré comme standard par les lecteurs numériques. On pourrait très bien imaginer que les lecteurs qui utilisent une tablette n’ont pas les mêmes standards que ceux qui utilisent une liseuse. Aussi est-il pertinent d’observer et de surtout analyser ce qui se fait sur les écosystèmes ciblés afin de prendre les bonnes décisions.</p>
+
+    <p id="para-46">Reste qu’il est pour l’instant très difficile de convaincre des utilisateurs qui possèdent un historique marqué avec le livre papier. Ils n’ont connu que cela et changer leurs habitudes ne pourra se faire qu’à l’aide d’interfaces évidentes et fonctionnelles, donc qui reprennent l’essentiel du livre papier, la forme la plus perfectionnée qui soit.</p>
+
+    <p id="para-47">Bien que le livre numérique se base sur les langages du Web, il n’est pas évident de faire accepter l’idée qu’un livre numérique peut s’inspirer du <i>Web design</i>&#160;: on ne s’attend pas vraiment à y trouver une barre de navigation par exemple, et il est nécessaire de la repenser pour le livre si on en fait usage. Comment l’intégrer pour qu’elle semble naturelle&#160;? Plus généralement, comment intégrer des éléments du Web dans un livre numérique&#160;? Constatons que les <i>slideshows</i> restent encore très rares, que personne n’a réellement pris le risque de transformer une page de titre en page d’accueil ou que les animations «&#160;fonctionnelles&#160;» sont tout simplement ignorées.</p>
+
+    <h3 id="subsection-5" title="3. Tracer une ligne à ne pas dépasser"><span aria-hidden="true">•</span> 3. Tracer une ligne à ne pas&#160;dépasser</h3>
+
+    <p id="para-48">Designer un livre numérique implique, la plupart du temps, l’interopérabilité. Il est certes possible de développer uniquement pour certaines machines<a href="#note-13" id="appel-13" class="appel" epub:type="noteref" role="doc-noteref">[13]</a>, mais à partir du moment où l’on choisit le standard EPUB, il faut absolument prendre en compte que les lecteurs ne comprennent pas forcément que le livre ne soit pas lisible sur leur appareil ou leur application de lecture préférée.</p>
+
+    <p id="para-49">Il faut noter que certaines fonctionnalités n’empêchent pas l’interopérabilité.<a href="#note-14" id="appel-14" class="appel" epub:type="noteref" role="doc-noteref">[14]</a> Le designer veillera donc à mettre en place un processus décisionnel lui permettant de faire les meilleurs choix techniques possibles en fonction d’objectifs prédéfinis. Il trace une ligne à ne pas dépasser.</p>
+
+    <p id="para-50">Un livre enrichi avec de l’audio et de la vidéo&#160;? Combien pèsera le fichier final&#160;? Est-ce que cela dégradera l’expérience des utilisateurs de liseuses&#160;? Le fichier sera-t-il trop lourd et occupera-t-il de la place pour rien sur leur appareil&#160;? Le fichier sera-t-il suffisamment réactif ou auront-ils à attendre que les pages se chargent (trop lentement)&#160;? Ont-ils la possibilité de consulter l’audio et la vidéo d’une autre manière, par exemple avec une application gratuite sur leur ordinateur&#160;?</p>
+
+    <p id="para-51">La fonctionnalité Java­Script imaginée est-elle centrale ou accessoire&#160;? L’intérêt du livre repose-t-il sur cette fonctionnalité ou peut-on s’en passer&#160;? Est-il possible de coder différemment pour rendre le fichier interopérable&#160;? Si oui, est-il possible d’atteindre la même performance ou sera-t-elle moindre sur les appareils supportant Java­Script, dégradant ainsi l’expérience des utilisateurs de ces machines&#160;?</p>
+
+    <p id="para-52">Le projet nécessite une mise en pages fixe&#160;? N’y a-t-il pas moyen de traduire cette mise en pages pour le <i>reflowable text</i> plutôt que de faire le choix du <i>fixed layout</i>&#160;? Ne peut-on pas développer une ou plusieurs techniques de codage pour réaliser du pseudo <i>fixed layout</i> quand le contenu le nécessite à tout prix&#160;?</p>
+
+    <p id="para-53">Et ainsi de suite.</p>
+
+    <p id="para-54">Il faut parfois utiliser des techniques détournées pour rendre le fichier interopérable, ce qui pourrait poser des problèmes à moyen terme. Aussi, il faut bien peser ces décisions&#160;; il n’y a pas d’idéal, il n’y a que des compromis.</p>
+
+    <p id="para-55">Au risque de nous répéter, il faut avant tout faire avec ce dont nous disposons et pas avec ce que nous souhaiterions avoir — et que nous n’aurons peut-être jamais.</p>
+
+    <hr class="transition"/>
+
+    <p id="para-56">Il nous faut absolument remarquer que, quelles que soient les décisions prises par les designers, le contenu se doit d’être accessible. Le marquage sémantique HTML doit donc être correct (titres, paragraphes, citations, les différents types d’italiques, etc.), du texte alternatif doit être fourni pour les images, des sous-titres doivent être intégrés pour l’audio et la vidéo, etc. L’accessibilité peut également avoir quelques répercussions sur des choix de mise en pages&#160;: on privilégiera la solution la plus accessible et pas la plus inédite ou esthétique.</p>
+
+    <hr class="transition"/>
+
+    <p id="para-57">Notons enfin que pour aider les développeurs et designers, des <i>guidelines</i> (bonnes pratiques) sont souvent mises à disposition par les organismes en charge des formats ou les revendeurs. Elles couvrent aussi bien les problématiques techniques que fonctionnelles et visent à uniformiser l’expérience utilisateur.</p>
+
+    <figure class="image" id="fig-8">
+      <img src="../Images/skeuomorphisme.jpg" alt="Le skeuomorphisme illustré par l'agenda"/>
+    </figure>
+
+    <h3 id="subsection-6" title="4. Familiarité et fonctionnalité"><span aria-hidden="true">•</span> 4. Familiarité et fonctionnalité</h3>
+
+    <p id="para-58">Introduire de nouvelles fonctionnalités, voire une conceptualisation innovante du livre numérique, n’est pas quelque chose d’aisé. Il faut que les utilisateurs les comprennent, apprennent comment les utiliser et assimilent leurs mécanismes comme des secondes natures — l’objectif est d’atteindre l’évidence et le confort du mécanisme de «&#160;tourner la page&#160;».</p>
+
+    <p id="para-59">Il convient donc de se demander à quoi les utilisateurs sont habitués.</p>
+
+    <p id="para-60">Devons-nous adopter une démarche skeuomorphique pour rappeler l’objet et sa fonction, par exemple un champ souligné pour indiquer qu’on peut écrire à l’intérieur de celui-ci ou un interrupteur pour activer ou désactiver une fonctionnalité&#160;?</p>
+
+    <p id="para-61">Avons-nous la possibilité d’expliquer la fonctionnalité en la représentant seulement de manière essentielle ou minimaliste&#160;?</p>
+
+    <p id="para-62">Pouvons-nous emprunter à d’autres domaines en espérant que les utilisateurs devinent à quoi cela renvoie et comment cela fonctionne (mécanismes et gestuelles)&#160;?</p>
+
+    <p id="para-63">Nous rechercherons ici l’<em>idiomatique</em>&#160;: nous essayerons d’utiliser des éléments d’interface au comportement stéréotypé, cohérent et donc simple à apprendre. Il n’y aura ainsi pas nécessairement besoin de calquer sur des objets de la vie réelle.</p>
+
+    <p id="para-64">Il reste certes toujours plus facile d’inviter les utilisateurs à tapoter sur un bouton pour interagir avec une fonctionnalité — on pourra même donner du volume au bouton à enfoncer — que de leur présenter des gestuelles spécifiques. Mais les utilisateurs de tablettes et smartphones connaissent peut-être déjà des gestuelles de ce type&#160;: glissement horizontal pour faire apparaître le menu, <i>pull to refresh,</i> zoom à deux doigts, glissement à droite sur un élément pour l’effacer, etc. Tout le défi consistera donc à rendre ces gestuelles évidentes par rapport à leur fonction et de les présenter efficacement lors de la première utilisation. Nous pourrons éventuellement en doubler certaines avec des boutons, au cas où.</p>
+
+    <p id="para-65">Toutefois, nous devons remarquer que les interfaces reposant sur des gestuelles sont plus indiquées pour les magazines, qui seront consultés bien plus régulièrement qu’un livre ou qu’une collection<a href="#note-15" id="appel-15" class="appel" epub:type="noteref" role="doc-noteref">[15]</a>, obligeant ainsi les utilisateurs à se rappeler et se servir de ces gestuelles. Pour autant, ce sont les interfaces les plus simples qui semblent aujourd’hui remporter les suffrages des utilisateurs (<a href="../Text/Part3.xhtml#section-4">voir essais et erreurs</a>).</p>
+
+    <figure class="image" id="fig-9">
+      <img src="../Images/nav-incomprehensible.jpg" alt="Une navigation mal pensée peut rapidement devenir incompréhensible."/>
+    </figure>
+
+    <h3 id="subsection-7" title="5. Un système de navigation évident"><span aria-hidden="true">•</span> 5. Un système de navigation évident</h3>
+
+    <p id="para-66">Quand on décide de construire un système de navigation (interface <span class="bloc">«&#160;<em>livre</em>&#160;»),</span> il faut le construire de manière logique et en utilisant des éléments visuels bien identifiables.</p>
+
+    <p id="para-67">Tenter de cacher l’interface dans le contenu la rendrait bien évidemment inutile. C’est ce qui peut par exemple arriver quand nous partons du principe que des gestuelles sont connues des utilisateurs et qu’il n’y a pas besoin de leur indiquer qu’elles sont utilisées. Et imaginons que vous disposiez du contenu sous un «&#160;onglet accordéon&#160;», pensez-vous qu’un lien par défaut (souligné et en couleur) suffise à souligner l’importance de ce contenu&#160;? Enfin, n’espérez pas pouvoir utiliser un menu de navigation reposant sur le principe de déploiement <i>on hover</i> (lorsque l’on dépose le pointeur au-dessus de l’élément) puisque cela n’existe techniquement pas sur les interfaces tactiles.</p>
+
+    <p id="para-68">Parfois, si le contenu est vraiment très riche et que nous invitons à une lecture non linéaire, il peut être utile d’indiquer au lecteur où il se trouve. Nous pouvons certainement emprunter les <i>breadcrumbs</i> au design Web&#160;: l’idée est de semer des cailloux pour retrouver son chemin, la plupart du temps en affichant l’arborescence du contenu hiérarchisé. Nous pourrons alors pourquoi pas prendre la liberté d’ajouter au-dessus des titres quelque chose comme «&#160;Partie X / Section Y&#160;» et lier ces deux éléments à leur emplacement dans la table des matières.</p>
+
+    <p id="para-69">Nous avons la chance de disposer de systèmes de navigation connus, perfectionnés et très confortables pour le livre (index, table des matières), il ne faudrait donc pas chercher à trop s’en éloigner s’il n’y a pas de raison de le faire. Par contre, il est très facile de les améliorer pour les adapter aux usages du numérique. Ne cherchons donc pas à réinventer pour réinventer.</p>
+
+    <h3 id="subsection-8" title="6. S’accommoder des usages"><span aria-hidden="true">•</span> 6. S’accommoder des&#160;usages</h3>
+
+    <p id="para-70">Comme nous l’avons vu précédemment, <a href="../Text/Part1.xhtml#cerveau">les lecteurs se comportent différemment devant un livre numérique</a>. Il faut prendre ces différences en considération pour construire la meilleure expérience de lecture possible.</p>
+
+    <p id="para-71">Comment gérer le processus de survol et de recherche du contenu&#160;?</p>
+
+    <p id="para-72">Avec des images, des titres clairement identifiés, des citations bien marquées ou <a href="#gras-italique">un système de mise en avant des propos importants</a> (souligné, gras ou italique).</p>
+
+    <p id="para-73">Les images, pour peu qu’elles soient bien choisies, pourront aider les lecteurs à <em>se rappeler</em> (relation entre l’image et le contenu), <em>leur rappeler</em> rapidement des idées ou des concepts mais également <em>attiser</em> leur curiosité (l’image leur parle).</p>
+
+    <p id="para-74">La hiérarchie visuelle leur permettra de <em>se repérer</em> et de <em>se diriger.</em></p>
+
+    <p id="para-75">Les citations pourront servir de <em>repères</em> visuels s’ils sont utilisés comme des piliers du discours.</p>
+
+    <p id="para-76">Le système de mise en avant, si bien pensé, leur permettra de <em>réviser</em> le chapitre sans avoir à tout relire.</p>
+
+    <p id="para-77">Évidemment, nous ne nous interdirons pas d’utiliser l’espace blanc, la typographie et pourquoi pas des icônes (guillemets pour citations, globe pour liens externes, bloc-notes pour remarques importantes, etc.)</p>
+
+    <p id="para-78">Nous cherchons également ici à compenser les difficultés de naviguer au travers d’un livre numérique en repensant certains détails de la mise en pages. Le design éditorial du livre numérique peut s’inspirer du design éditorial Web et magazine, mais il faudra pour cela penser «&#160;éditer par le de­sign&#160;».</p>
+
+    <hr class="transition"/>
+
+    <p id="para-79">Il faut rappeler que quand nous designons un livre numérique, nous le designons autant pour les interfaces tactiles que les interfaces classiques (souris), ce qui doit nous obliger à porter une attention de tous les instants à tous ces petits détails finalement pas si insignifiants.</p>
+
+    <p id="para-80">Sur ordinateur, par exemple, l’utilisateur pourra voir apparaître une bulle informative quand il passera la souris sur un lien&#160;; il serait donc avisé de décrire plus précisément ce vers quoi ce lien renvoie. Ceci peut être très utile quand un système de navigation basé sur des icônes est intégré au livre<a href="#note-16" id="appel-16" class="appel" epub:type="noteref" role="doc-noteref">[16]</a>.</p>
+
+    <figure class="image-caption" id="fig-10">
+      <img src="../Images/Support.jpg" alt="Le support du format EPUB et de ses fonctionnalités est un énorme problème aujourd'hui"/>
+
+      <figcaption class="legende">Certaines apps ne supportent même pas les styles de présentation… mais proposent pourtant de régler finement la composition&#160;typographique.</figcaption>
+    </figure>
+
+    <h3 id="subsection-9" title="7. Ce qui est designé doit pouvoir se dégrader"><span aria-hidden="true">•</span> 7. Ce qui est designé doit pouvoir se&#160;dégrader</h3>
+
+    <p id="para-81">Dernier principe, mais pas le moindre.</p>
+
+    <p id="para-82">Le support des styles de présentation n’est qu’optionnel pour EPUB&#160;3, et il n’est souvent que partiel quand il est effectivement intégré. Autrement dit, la mise en pages peut être totalement ignorée par certains logiciels de lecture. Rajoutons que ces logiciels proposent souvent aux lecteurs d’imposer leurs propres styles ou réglages typographiques, et qu’ils remplacent certains styles du fichier dans le but d’assurer la lisibilité de l’ensemble des fichiers<a href="#note-17" id="appel-17" class="appel" epub:type="noteref" role="doc-noteref">[17]</a>.</p>
+
+    <p id="para-83">Il faut par conséquent accepter l’idée que la mise en pages sera dégradée par certains appareils et applications. Notre marquage HTML a donc plutôt intérêt à être correct&#160;; nous ne pouvons nous permettre aucun compromis à ce sujet. Pour peu que nous n’utilisions pas correctement les balises de titres, la hiérarchie n’apparaîtrait plus au lecteur, ce qui posera de gros problèmes de compréhension. Les citations en bloc, les italiques ou gras incorrectement marqués perdront également leur sémantique (utilisation d’une balise neutre &lt;span&gt; au lieu de &lt;i&gt;, &lt;em&gt; ou &lt;cite&gt;, et &lt;b&gt; ou &lt;strong&gt;). Inutile de mentionner comment les éléments de navigation aux styles complexes seront traités dans ce cas.</p>
+
+    <p id="para-84">Il en va de même pour l’interactivité et le multimédia, leurs supports étant eux aussi optionnels.</p>
+
+    <p id="para-85">Pour autant, ce principe ne doit pas interdire toute tentative de design avancé, il nous faut seulement trouver le bon équilibre. Bien qu’il puisse paraître incompréhensible que le support des styles de présentation, qui constitue un besoin réellement critique dans le domaine du livre, ne soit pas rendu obligatoire, nous devons faire avec. Même dégradé, le livre que nous designons doit offrir une expérience utilisateur acceptable.</p>
+    </section>
+    
+    <hr class="filet"/>
+
+    <section aria-label="Notes de fin de chapitre" epub:type="endnotes" role="doc-endnotes">
+	<ol class="endnotes">
+      <li class="footnote" id="note-6" epub:type="endnote" role="doc-endnote"><a href="#appel-6" class="note">[6]</a> Ce qui est certes vrai pour une petite partie — non négligeable — de livres.</li>
+
+      <li class="footnote" id="note-7" epub:type="endnote" role="doc-endnote"><a href="#appel-7" class="note">[7]</a> Par règles, on entend «&#160;bonnes pratiques&#160;», soit des pratiques communément admises dont nous sommes certains qu’elles fonctionnent correctement.</li>
+
+      <li class="footnote" id="note-8" epub:type="endnote" role="doc-endnote"><a href="#appel-8" class="note">[8]</a> Il existe certes des applications qui gèrent le contenu d’un livre numérique comme une page Web, donc avec une mécanique de scroll, mais elles restent rares.</li>
+
+      <li class="footnote" id="note-9" epub:type="endnote" role="doc-endnote"><a href="#appel-9" class="note">[9]</a> Même pour le <i>fixed layout,</i> où nous cherchons à translater le livre papier dans le numérique, nous devons faire quelques adaptations pour rendre le contenu lisible sur des tailles d’écrans variées.</li>
+
+      <li class="footnote" id="note-10" epub:type="endnote" role="doc-endnote"><a href="#appel-10" class="note">[10]</a> Rappelons que rien que les appels de notes demandent une adaptation afin d’être fonctionnels en numérique.</li>
+
+      <li class="footnote" id="note-11" epub:type="endnote" role="doc-endnote"><a href="#appel-11" class="note">[11]</a> C’est d’ailleurs l’idée principale du livre numérique puisque l’utilisateur est placé au centre de l’écosystème en raison des libertés et possibilités qu’on lui offre&#160;: partage, modification de la composition typographique, etc.</li>
+
+      <li class="footnote" id="note-12" epub:type="endnote" role="doc-endnote"><a href="#appel-12" class="note">[12]</a> Beaucoup de liseuses utilisent le moteur de rendu Adobe RMSDK dont le système tactile se base sur des coordonnées peu précises.</li>
+
+      <li class="footnote" id="note-13" epub:type="endnote" role="doc-endnote"><a href="#appel-13" class="note">[13]</a> Applications, formats propriétaires ou fonctionnalités EPUB supportés par un panel très réduit d’appareils.</li>
+
+      <li class="footnote" id="note-14" epub:type="endnote" role="doc-endnote"><a href="#appel-14" class="note">[14]</a> EPUB&#160;3 intègre même un mécanisme de <i>fallback</i>&#160;: le développeur peut indiquer des instructions dans le cas où le logiciel ne supporte pas un format multimédia ou une fonctionnalité technique.</li>
+
+      <li class="footnote" id="note-15" epub:type="endnote" role="doc-endnote"><a href="#appel-15" class="note">[15]</a> Nous ne considérons pas là les interfaces communes d’applications de livres numériques ou de formats type <span class="bloc">iBooks</span>.</li>
+
+      <li class="footnote" id="note-16" epub:type="endnote" role="doc-endnote"><a href="#appel-16" class="note">[16]</a> Cela devrait logiquement déjà avoir été fait dans un souci d’accessibilité.</li>
+
+      <li class="footnote" id="note-17" epub:type="endnote" role="doc-endnote"><a href="#appel-17" class="note">[17]</a> La qualité d’une partie significative des fichiers pose d’énormes problèmes à ces développeurs. On leur demande en vérité de faire avec du mauvais code, raison pour laquelle ils remplacent des styles de présentation par des styles prédéfinis. Comme nous pouvons le constater, le code est un enjeu important.</li>
+	</ol>
+    </section>
+  </section>
+</body>
+</html>

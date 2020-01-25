@@ -1,0 +1,29 @@
+{
+  "name": "edito-design-hack",
+  "version": "1.0.0",
+  "description": "Dépôt public des livres de la série Édito|Design|Hack",
+  "main": "package.js",
+  "scripts": {
+    "package": "node ./make.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayPanoz/edito-design-hack.git"
+  },
+  "keywords": [
+    "ebook",
+    "livre numérique",
+    "éditorial",
+    "design",
+    "édition"
+  ],
+  "author": "JayPanoz",
+  "license": "CC-BY-NC-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/JayPanoz/edito-design-hack/issues"
+  },
+  "homepage": "https://github.com/JayPanoz/edito-design-hack#readme",
+  "devDependencies": {
+    "epub-zip": "0.0.1"
+  }
+}

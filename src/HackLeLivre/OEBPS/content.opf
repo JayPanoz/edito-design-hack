@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package prefix="rendition: http://www.idpf.org/vocab/rendition/# ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/ a11y: http://www.idpf.org/epub/vocab/package/a11y/#" unique-identifier="BookId" version="3.0" xmlns="http://www.idpf.org/2007/opf">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:identifier id="BookId">urn:uuid:f95a4b42-7189-4f43-aabb-b0008fd6b8df</dc:identifier>
+    <dc:title id="t1">Hack le livre</dc:title>
+    <meta property="title-type" refines="#t1">main</meta>
+    <dc:creator id="create1">Jiminy Panoz</dc:creator>
+    <meta property="role" refines="#create1" scheme="marc:relators">aut</meta>
+    <meta property="file-as" refines="#create1">Panoz, Jiminy</meta>
+    <dc:language>fr</dc:language>
+    <dc:publisher>Jiminy Panoz</dc:publisher>
+    <dc:subject>ebook</dc:subject>
+    <dc:subject>livre numérique</dc:subject>
+    <dc:subject>éditorial</dc:subject>
+    <dc:subject>édition</dc:subject>
+    <dc:subject>design</dc:subject>
+    <dc:description>Hack le livre se propose de passer en revue le fonctionnement du livre afin de le hacker pour le numérique.</dc:description>
+    <meta content="0.9.5" name="Sigil version"/>
+    <meta name="cover" content="Hack-cover.jpg"/>
+    <meta property="dcterms:modified">2020-01-25T22:17:20Z</meta>
+    <meta property="ibooks:version">1.0</meta>
+    <meta property="ibooks:specified-fonts">true</meta>
+    <meta property="schema:accessibilityFeature">displayTransformability</meta>
+    <meta property="schema:accessibilityFeature">readingOrder</meta>
+    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    <meta property="schema:accessibilityFeature">alternativeText</meta>
+    <meta property="schema:accessibilityHazard">noFlashingHazard</meta>
+    <meta property="schema:accessibilityHazard">noSoundHazard</meta>
+    <meta property="schema:accessibilityHazard">noMotionSimulationHazard</meta>
+    <meta property="schema:accessMode">textual</meta>
+    <meta property="schema:accessMode">visual</meta>
+    <meta property="schema:accessModeSufficient">textual,visual</meta>
+    <meta property="schema:accessModeSufficient">textual</meta>
+    <meta property="schema:accessibilityAPI">ARIA</meta>
+    <meta property="schema:accessibilitySummary">Ce livre numérique a été testé avec EPUBCheck et Ace by Daisy.</meta>
+  </metadata>
+  <manifest>
+    <item href="Images/Archi.jpg" id="Archi.jpg" media-type="image/jpeg"/>
+    <item href="Text/Auteur.xhtml" id="Auteur.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/CD-ROM.jpg" id="CD-ROM.jpg" media-type="image/jpeg"/>
+    <item href="Images/Code-Squelette.jpg" id="Code-Squelette.jpg" media-type="image/jpeg"/>
+    <item href="Text/Collec.xhtml" id="Collec.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Conclusion.xhtml" id="Conclusion.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/Cover-Collec-hack.jpg" id="Cover-Collec-hack.jpg" media-type="image/jpeg"/>
+    <item href="Text/Cover.xhtml" id="Cover.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/Data.jpg" id="Data.jpg" media-type="image/jpeg"/>
+    <item href="Images/EverybookStartup.jpg" id="EverybookStartup.jpg" media-type="image/jpeg"/>
+    <item href="Images/FXL-iPhone.jpg" id="FXL-iPhone.jpg" media-type="image/jpeg"/>
+    <item href="Images/Formats.jpg" id="Formats.jpg" media-type="image/jpeg"/>
+    <item href="Images/GrilleMagEbooks.jpg" id="GrilleMagEbooks.jpg" media-type="image/jpeg"/>
+    <item href="Images/Hack-cover.jpg" id="Hack-cover.jpg" media-type="image/jpeg" properties="cover-image"/>
+    <item href="Images/IdeesVrac.jpg" id="IdeesVrac.jpg" media-type="image/jpeg"/>
+    <item href="Images/InDD.jpg" id="InDD.jpg" media-type="image/jpeg"/>
+    <item href="Text/Intro.xhtml" id="Intro.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/LongueTraine.jpg" id="LongueTraine.jpg" media-type="image/jpeg"/>
+    <item href="Images/MCstore.jpg" id="MCstore.jpg" media-type="image/jpeg"/>
+    <item href="Images/Mag-Trvl.jpg" id="Mag-Trvl.jpg" media-type="image/jpeg"/>
+    <item href="Fonts/Mate-Italic.ttf" id="Mate-Italic.ttf" media-type="application/vnd.ms-opentype"/>
+    <item href="Fonts/Mate-Regular.ttf" id="Mate-Regular.ttf" media-type="application/vnd.ms-opentype"/>
+    <item href="Images/Matter-site.jpg" id="Matter-site.jpg" media-type="image/jpeg"/>
+    <item href="Images/Mc1.jpg" id="Mc1.jpg" media-type="image/jpeg"/>
+    <item href="Images/McAbo.jpg" id="McAbo.jpg" media-type="image/jpeg"/>
+    <item href="Images/McRead.jpg" id="McRead.jpg" media-type="image/jpeg"/>
+    <item href="Fonts/OpenSans-CondBold.otf" id="OpenSans-CondBold.otf" media-type="application/vnd.ms-opentype"/>
+    <item href="Fonts/OpenSans-CondLight.otf" id="OpenSans-CondLight.otf" media-type="application/vnd.ms-opentype"/>
+    <item href="Images/Page-tourne.jpg" id="Page-tourne.jpg" media-type="image/jpeg"/>
+    <item href="Images/Paper-accueil.jpg" id="Paper-accueil.jpg" media-type="image/jpeg"/>
+    <item href="Images/Paper-menu.jpg" id="Paper-menu.jpg" media-type="image/jpeg"/>
+    <item href="Images/Paper-travail.jpg" id="Paper-travail.jpg" media-type="image/jpeg"/>
+    <item href="Images/Paper-zoom.jpg" id="Paper-zoom.jpg" media-type="image/jpeg"/>
+    <item href="Text/Part1.xhtml" id="Part1.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Part2.xhtml" id="Part2.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Part3.xhtml" id="Part3.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/PrePost.jpg" id="PrePost.jpg" media-type="image/jpeg"/>
+    <item href="Images/Pressbooks.jpg" id="Pressbooks.jpg" media-type="image/jpeg"/>
+    <item href="Text/Prom.xhtml" id="Prom.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/RWD.jpg" id="RWD.jpg" media-type="image/jpeg"/>
+    <item href="Images/RegionsExclusions.jpg" id="RegionsExclusions.jpg" media-type="image/jpeg"/>
+    <item href="Images/SACD.jpg" id="SACD.jpg" media-type="image/jpeg"/>
+    <item href="Images/SDK.jpg" id="SDK.jpg" media-type="image/jpeg"/>
+    <item href="Images/Screen.jpg" id="Screen.jpg" media-type="image/jpeg"/>
+    <item href="Styles/Styles-essai.css" id="Styles-essai.css" media-type="text/css"/>
+    <item href="Images/SupportCode.jpg" id="SupportCode.jpg" media-type="image/jpeg"/>
+    <item href="Text/TabMat.xhtml" id="TabMat.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/TasLivres.jpg" id="TasLivres.jpg" media-type="image/jpeg"/>
+    <item href="Images/Tendency.jpg" id="Tendency.jpg" media-type="image/jpeg"/>
+    <item href="Images/Texte-fond.jpg" id="Texte-fond.jpg" media-type="image/jpeg"/>
+    <item href="Text/Titre.xhtml" id="Titre.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/WYSIWYG.jpg" id="WYSIWYG.jpg" media-type="image/jpeg"/>
+    <item href="Images/WikiLiseuse.jpg" id="WikiLiseuse.jpg" media-type="image/jpeg"/>
+    <item href="Images/abo.jpg" id="abo.jpg" media-type="image/jpeg"/>
+    <item href="Images/blog-Kindle.jpg" id="blog-Kindle.jpg" media-type="image/jpeg"/>
+    <item href="Images/bugAldiko.jpg" id="bugAldiko.jpg" media-type="image/jpeg"/>
+    <item href="Images/code.jpg" id="code.jpg" media-type="image/jpeg"/>
+    <item href="Images/desert-iba.jpg" id="desert-iba.jpg" media-type="image/jpeg"/>
+    <item href="Images/fixed.jpg" id="fixed.jpg" media-type="image/jpeg"/>
+    <item href="Images/home.jpg" id="home.jpg" media-type="image/jpeg"/>
+    <item href="Images/kindleBogue.jpg" id="kindleBogue.jpg" media-type="image/jpeg"/>
+    <item href="Images/lessmore.jpg" id="lessmore.jpg" media-type="image/jpeg"/>
+    <item href="Images/mockup-marges.jpg" id="mockup-marges.jpg" media-type="image/jpeg"/>
+    <item href="Images/mockup-preview.jpg" id="mockup-preview.jpg" media-type="image/jpeg"/>
+    <item href="Images/mockup-toc.jpg" id="mockup-toc.jpg" media-type="image/jpeg"/>
+    <item href="Images/modernizr.jpg" id="modernizr.jpg" media-type="image/jpeg"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="Images/page-collec.jpg" id="page-collec.jpg" media-type="image/jpeg"/>
+    <item href="Images/page.jpg" id="page.jpg" media-type="image/jpeg"/>
+    <item href="Images/pinch-to-zoom.jpg" id="pinch-to-zoom.jpg" media-type="image/jpeg"/>
+    <item href="Images/reflow.jpg" id="reflow.jpg" media-type="image/jpeg"/>
+    <item href="Images/rouages.jpg" id="rouages.jpg" media-type="image/jpeg"/>
+    <item href="Images/surligner.jpg" id="surligner.jpg" media-type="image/jpeg"/>
+    <item href="Images/tap-mot.jpg" id="tap-mot.jpg" media-type="image/jpeg"/>
+    <item href="Images/text-based.jpg" id="text-based.jpg" media-type="image/jpeg"/>
+    <item href="Images/tricks.jpg" id="tricks.jpg" media-type="image/jpeg"/>
+    <item href="Text/nav.xhtml" id="navid" media-type="application/xhtml+xml" properties="nav"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="Cover.xhtml"/>
+    <itemref idref="Collec.xhtml"/>
+    <itemref idref="Titre.xhtml"/>
+    <itemref idref="TabMat.xhtml"/>
+    <itemref idref="Intro.xhtml"/>
+    <itemref idref="Part1.xhtml"/>
+    <itemref idref="Part2.xhtml"/>
+    <itemref idref="Part3.xhtml"/>
+    <itemref idref="Conclusion.xhtml"/>
+    <itemref idref="Auteur.xhtml"/>
+    <itemref idref="Prom.xhtml"/>
+  </spine>
+  <guide>
+    <reference href="Text/Cover.xhtml" title="Couverture" type="cover"/>
+  </guide>
+</package>

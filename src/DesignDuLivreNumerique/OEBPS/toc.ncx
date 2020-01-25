@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+<head>
+  <meta name="dtb:uid" content="urn:uuid:27381d23-f1eb-4d4b-9c37-864eee540a54" />
+  <meta name="dtb:depth" content="3" />
+  <meta name="dtb:totalPageCount" content="0" />
+  <meta name="dtb:maxPageNumber" content="0" />
+</head>
+<docTitle>
+  <text>Design du livre numérique</text>
+</docTitle>
+<navMap>
+  <navPoint id="navPoint1">
+    <navLabel>
+      <text>Design du livre numérique</text>
+    </navLabel>
+    <content src="Text/Titre.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint2">
+    <navLabel>
+      <text>Sommaire</text>
+    </navLabel>
+    <content src="Text/TabMat.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint3">
+    <navLabel>
+      <text>Introduction</text>
+    </navLabel>
+    <content src="Text/Intro.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint4">
+    <navLabel>
+      <text>Partie 1 – Constats</text>
+    </navLabel>
+    <content src="Text/Part1.xhtml" />
+    <navPoint id="navPoint5">
+      <navLabel>
+        <text>Un livre est un livre</text>
+      </navLabel>
+      <content src="Text/Part1.xhtml#section-1" />
+    </navPoint>
+    <navPoint id="navPoint6">
+      <navLabel>
+        <text>Un livre numérique n’est pas un livre papier</text>
+      </navLabel>
+      <content src="Text/Part1.xhtml#section-2" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint7">
+    <navLabel>
+      <text>Partie 2 – Le langage de design du livre numérique</text>
+    </navLabel>
+    <content src="Text/Part2.xhtml" />
+    <navPoint id="navPoint8">
+      <navLabel>
+        <text>Les bases du langage</text>
+      </navLabel>
+      <content src="Text/Part2.xhtml#section-1" />
+      <navPoint id="navPoint9">
+        <navLabel>
+          <text>1. Le livre numérique est un flux paginé</text>
+        </navLabel>
+        <content src="Text/Part2.xhtml#subsection-1" />
+      </navPoint>
+      <navPoint id="navPoint10">
+        <navLabel>
+          <text>2. Le contenu est une interface</text>
+        </navLabel>
+        <content src="Text/Part2.xhtml#subsection-2" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint11">
+      <navLabel>
+        <text>Les principes</text>
+      </navLabel>
+      <content src="Text/Part2.xhtml#section-2" />
+      <navPoint id="navPoint12">
+        <navLabel>
+          <text>1. Anticiper les erreurs, évacuer la frustration de l’utilisateur</text>
+        </navLabel>
+        <content src="Text/Part2.xhtml#subsection-3" />
+      </navPoint>
+      <navPoint id="navPoint13">
+        <navLabel>
+          <text>2. Maintenir des standards</text>
+        </navLabel>
+        <content src="Text/Part2.xhtml#subsection-4" />
+      </navPoint>
+      <navPoint id="navPoint14">
+        <navLabel>
+          <text>3. Tracer une ligne à ne pas dépasser</text>
+        </navLabel>
+        <content src="Text/Part2.xhtml#subsection-5" />
+      </navPoint>
+      <navPoint id="navPoint15">
+        <navLabel>
+          <text>4. Familiarité et fonctionnalité</text>
+        </navLabel>
+        <content src="Text/Part2.xhtml#subsection-6" />
+      </navPoint>
+      <navPoint id="navPoint16">
+        <navLabel>
+          <text>5. Un système de navigation évident</text>
+        </navLabel>
+        <content src="Text/Part2.xhtml#subsection-7" />
+      </navPoint>
+      <navPoint id="navPoint17">
+        <navLabel>
+          <text>6. S’accommoder des usages</text>
+        </navLabel>
+        <content src="Text/Part2.xhtml#subsection-8" />
+      </navPoint>
+      <navPoint id="navPoint18">
+        <navLabel>
+          <text>7. Ce qui est designé doit pouvoir se dégrader</text>
+        </navLabel>
+        <content src="Text/Part2.xhtml#subsection-9" />
+      </navPoint>
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint19">
+    <navLabel>
+      <text>Partie 3 – Les potentialités</text>
+    </navLabel>
+    <content src="Text/Part3.xhtml" />
+    <navPoint id="navPoint20">
+      <navLabel>
+        <text>Les apps–magazines</text>
+      </navLabel>
+      <content src="Text/Part3.xhtml#section-1" />
+    </navPoint>
+    <navPoint id="navPoint21">
+      <navLabel>
+        <text>Le Web</text>
+      </navLabel>
+      <content src="Text/Part3.xhtml#section-2" />
+    </navPoint>
+    <navPoint id="navPoint22">
+      <navLabel>
+        <text>Mais encore ?</text>
+      </navLabel>
+      <content src="Text/Part3.xhtml#section-3" />
+    </navPoint>
+    <navPoint id="navPoint23">
+      <navLabel>
+        <text>Essais et erreurs</text>
+      </navLabel>
+      <content src="Text/Part3.xhtml#section-4" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint24">
+    <navLabel>
+      <text>Conclusion</text>
+    </navLabel>
+    <content src="Text/Conclusion.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint25">
+    <navLabel>
+      <text>L’auteur</text>
+    </navLabel>
+    <content src="Text/Auteur.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint26">
+    <navLabel>
+      <text>Éditorial, design, hack</text>
+    </navLabel>
+    <content src="Text/Prom.xhtml" />
+  </navPoint>
+</navMap>
+</ncx>

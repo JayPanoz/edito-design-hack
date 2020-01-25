@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package prefix="rendition: http://www.idpf.org/vocab/rendition/# ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/ a11y: http://www.idpf.org/epub/vocab/package/a11y/#" unique-identifier="BookId" version="3.0" xmlns="http://www.idpf.org/2007/opf">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:opf="http://www.idpf.org/2007/opf">
+    <dc:identifier id="BookId">urn:uuid:27381d23-f1eb-4d4b-9c37-864eee540a54</dc:identifier>
+    <dc:title id="t1">Design du livre numérique</dc:title>
+    <meta property="title-type" refines="#t1">main</meta>
+    <dc:creator id="create1">Jiminy Panoz</dc:creator>
+    <meta property="role" refines="#create1" scheme="marc:relators">aut</meta>
+    <meta property="file-as" refines="#create1">Panoz, Jiminy</meta>
+    <dc:language>fr</dc:language>
+    <dc:publisher>Jiminy Panoz</dc:publisher>
+    <dc:subject>ebook</dc:subject>
+    <dc:subject>livre numérique</dc:subject>
+    <dc:subject>éditorial</dc:subject>
+    <dc:subject>édition</dc:subject>
+    <dc:subject>design</dc:subject>
+    <dc:description>Design du livre numérique se propose d'établir un langage de design sain et évolutif pour le livre numérique. Pour ce faire, l’auteur établit des constats et développe des grands principes qui permettront de mieux envisager la mise en pages de son livre numérique. Enfin, dans une troisième partie, il présente quelques exemples qui se veulent des possibilités pour démontrer que nous avons encore beaucoup à faire.</dc:description>
+    <meta content="0.9.5" name="Sigil version"/>
+    <meta name="cover" content="Design-cover.jpg"/>
+    <meta property="dcterms:modified">2020-01-25T22:17:27Z</meta>
+    <meta property="ibooks:version">1.0</meta>
+    <meta property="ibooks:specified-fonts">true</meta>
+    <meta property="schema:accessibilityFeature">displayTransformability</meta>
+    <meta property="schema:accessibilityFeature">readingOrder</meta>
+    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    <meta property="schema:accessibilityFeature">alternativeText</meta>
+    <meta property="schema:accessibilityHazard">noFlashingHazard</meta>
+    <meta property="schema:accessibilityHazard">noSoundHazard</meta>
+    <meta property="schema:accessibilityHazard">noMotionSimulationHazard</meta>
+    <meta property="schema:accessMode">textual</meta>
+    <meta property="schema:accessMode">visual</meta>
+    <meta property="schema:accessModeSufficient">textual,visual</meta>
+    <meta property="schema:accessModeSufficient">textual</meta>
+    <meta property="schema:accessibilityAPI">ARIA</meta>
+    <meta property="schema:accessibilitySummary">Ce livre numérique a été testé avec EPUBCheck et Ace by Daisy.</meta>
+  </metadata>
+  <manifest>
+    <item href="Images/AppKindle.jpg" id="AppKindle.jpg" media-type="image/jpeg"/>
+    <item href="Text/Auteur.xhtml" id="Auteur.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/Avancement.jpg" id="Avancement.jpg" media-type="image/jpeg"/>
+    <item href="Images/Cartes-slides.jpg" id="Cartes-slides.jpg" media-type="image/jpeg"/>
+    <item href="Images/Circa-Wavii-summly.jpg" id="Circa-Wavii-summly.jpg" media-type="image/jpeg"/>
+    <item href="Text/Collec.xhtml" id="Collec.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Conclusion.xhtml" id="Conclusion.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/Cover-Collec-design.jpg" id="Cover-Collec-design.jpg" media-type="image/jpeg"/>
+    <item href="Text/Cover.xhtml" id="Cover.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/CoverInterro.jpg" id="CoverInterro.jpg" media-type="image/jpeg"/>
+    <item href="Images/DL-mag.jpg" id="DL-mag.jpg" media-type="image/jpeg"/>
+    <item href="Images/DebutChap.jpg" id="DebutChap.jpg" media-type="image/jpeg"/>
+    <item href="Images/Design-cover.jpg" id="Design-cover.jpg" media-type="image/jpeg" properties="cover-image"/>
+    <item href="Images/DoubePage.jpg" id="DoubePage.jpg" media-type="image/jpeg"/>
+    <item href="Images/EinkVsLCD.jpg" id="EinkVsLCD.jpg" media-type="image/jpeg"/>
+    <item href="Images/Englober.jpg" id="Englober.jpg" media-type="image/jpeg"/>
+    <item href="Images/InterfaceMag.jpg" id="InterfaceMag.jpg" media-type="image/jpeg"/>
+    <item href="Images/Interfacebook.jpg" id="Interfacebook.jpg" media-type="image/jpeg"/>
+    <item href="Text/Intro.xhtml" id="Intro.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/ListeLecture.jpg" id="ListeLecture.jpg" media-type="image/jpeg"/>
+    <item href="Images/Livre-Chemin.jpg" id="Livre-Chemin.jpg" media-type="image/jpeg"/>
+    <item href="Images/MVP.jpg" id="MVP.jpg" media-type="image/jpeg"/>
+    <item href="Images/Mag-accueil.jpg" id="Mag-accueil.jpg" media-type="image/jpeg"/>
+    <item href="Images/Mag-fleches.jpg" id="Mag-fleches.jpg" media-type="image/jpeg"/>
+    <item href="Images/Mag7.jpg" id="Mag7.jpg" media-type="image/jpeg"/>
+    <item href="Images/MagPapVsNum.jpg" id="MagPapVsNum.jpg" media-type="image/jpeg"/>
+    <item href="Fonts/Mate-Italic.ttf" id="Mate-Italic.ttf" media-type="application/vnd.ms-opentype"/>
+    <item href="Fonts/Mate-Regular.ttf" id="Mate-Regular.ttf" media-type="application/vnd.ms-opentype"/>
+    <item href="Images/Medium.jpg" id="Medium.jpg" media-type="image/jpeg"/>
+    <item href="Images/Metro.jpg" id="Metro.jpg" media-type="image/jpeg"/>
+    <item href="Fonts/OpenSans-CondBold.otf" id="OpenSans-CondBold.otf" media-type="application/vnd.ms-opentype"/>
+    <item href="Fonts/OpenSans-CondLight.otf" id="OpenSans-CondLight.otf" media-type="application/vnd.ms-opentype"/>
+    <item href="Images/PageTitre.jpg" id="PageTitre.jpg" media-type="image/jpeg"/>
+    <item href="Text/Part1.xhtml" id="Part1.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Part2.xhtml" id="Part2.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/Part3.xhtml" id="Part3.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/PatternKindle.jpg" id="PatternKindle.jpg" media-type="image/jpeg"/>
+    <item href="Images/PortraitTRVL.jpg" id="PortraitTRVL.jpg" media-type="image/jpeg"/>
+    <item href="Text/Prom.xhtml" id="Prom.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/RWD.jpg" id="RWD.jpg" media-type="image/jpeg"/>
+    <item href="Images/Readtime.jpg" id="Readtime.jpg" media-type="image/jpeg"/>
+    <item href="Images/ScanPage.jpg" id="ScanPage.jpg" media-type="image/jpeg"/>
+    <item href="Images/Search.jpg" id="Search.jpg" media-type="image/jpeg"/>
+    <item href="Images/SimplerPage.jpg" id="SimplerPage.jpg" media-type="image/jpeg"/>
+    <item href="Styles/Styles-essai.css" id="Styles-essai.css" media-type="text/css"/>
+    <item href="Images/Support.jpg" id="Support.jpg" media-type="image/jpeg"/>
+    <item href="Images/SwissEbookDesign.jpg" id="SwissEbookDesign.jpg" media-type="image/jpeg"/>
+    <item href="Text/TabMat.xhtml" id="TabMat.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/TempsLecture.jpg" id="TempsLecture.jpg" media-type="image/jpeg"/>
+    <item href="Text/Titre.xhtml" id="Titre.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Images/Toc.jpg" id="Toc.jpg" media-type="image/jpeg"/>
+    <item href="Images/TournerPage.jpg" id="TournerPage.jpg" media-type="image/jpeg"/>
+    <item href="Images/Trvl-accueil.jpg" id="Trvl-accueil.jpg" media-type="image/jpeg"/>
+    <item href="Images/Trvl-double-page.jpg" id="Trvl-double-page.jpg" media-type="image/jpeg"/>
+    <item href="Images/Trvl-finale.jpg" id="Trvl-finale.jpg" media-type="image/jpeg"/>
+    <item href="Images/Trvl-image.jpg" id="Trvl-image.jpg" media-type="image/jpeg"/>
+    <item href="Images/Trvl-ouverture.jpg" id="Trvl-ouverture.jpg" media-type="image/jpeg"/>
+    <item href="Images/Trvl-video.jpg" id="Trvl-video.jpg" media-type="image/jpeg"/>
+    <item href="Images/TutoMag.jpg" id="TutoMag.jpg" media-type="image/jpeg"/>
+    <item href="Images/Typo-render.jpg" id="Typo-render.jpg" media-type="image/jpeg"/>
+    <item href="Images/annoter.jpg" id="annoter.jpg" media-type="image/jpeg"/>
+    <item href="Images/clear.jpg" id="clear.jpg" media-type="image/jpeg"/>
+    <item href="Images/code.jpg" id="code.jpg" media-type="image/jpeg"/>
+    <item href="Images/depliant.jpg" id="depliant.jpg" media-type="image/jpeg"/>
+    <item href="Images/gov.jpg" id="gov.jpg" media-type="image/jpeg"/>
+    <item href="Images/iPad.jpg" id="iPad.jpg" media-type="image/jpeg"/>
+    <item href="Images/iba.jpg" id="iba.jpg" media-type="image/jpeg"/>
+    <item href="Images/indicateur.jpg" id="indicateur.jpg" media-type="image/jpeg"/>
+    <item href="Images/justifnohyphens.jpg" id="justifnohyphens.jpg" media-type="image/jpeg"/>
+    <item href="Images/kindle.jpg" id="kindle.jpg" media-type="image/jpeg"/>
+    <item href="Images/lien.jpg" id="lien.jpg" media-type="image/jpeg"/>
+    <item href="Images/mag-article.jpg" id="mag-article.jpg" media-type="image/jpeg"/>
+    <item href="Images/mag-lien.jpg" id="mag-lien.jpg" media-type="image/jpeg"/>
+    <item href="Images/mag-partage.jpg" id="mag-partage.jpg" media-type="image/jpeg"/>
+    <item href="Images/mag-toc.jpg" id="mag-toc.jpg" media-type="image/jpeg"/>
+    <item href="Images/menus.jpg" id="menus.jpg" media-type="image/jpeg"/>
+    <item href="Images/nav-incomprehensible.jpg" id="nav-incomprehensible.jpg" media-type="image/jpeg"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="Images/page-collec.jpg" id="page-collec.jpg" media-type="image/jpeg"/>
+    <item href="Images/page.jpg" id="page.jpg" media-type="image/jpeg"/>
+    <item href="Images/rebond.jpg" id="rebond.jpg" media-type="image/jpeg"/>
+    <item href="Images/schema-Interfaces.jpg" id="schema-Interfaces.jpg" media-type="image/jpeg"/>
+    <item href="Images/signet.jpg" id="signet.jpg" media-type="image/jpeg"/>
+    <item href="Images/skeuomorphisme.jpg" id="skeuomorphisme.jpg" media-type="image/jpeg"/>
+    <item href="Images/surligner.jpg" id="surligner.jpg" media-type="image/jpeg"/>
+    <item href="Images/wiki-google.jpg" id="wiki-google.jpg" media-type="image/jpeg"/>
+    <item href="Text/nav.xhtml" id="navid" media-type="application/xhtml+xml" properties="nav"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="Cover.xhtml"/>
+    <itemref idref="Collec.xhtml"/>
+    <itemref idref="Titre.xhtml"/>
+    <itemref idref="TabMat.xhtml"/>
+    <itemref idref="Intro.xhtml"/>
+    <itemref idref="Part1.xhtml"/>
+    <itemref idref="Part2.xhtml"/>
+    <itemref idref="Part3.xhtml"/>
+    <itemref idref="Conclusion.xhtml"/>
+    <itemref idref="Auteur.xhtml"/>
+    <itemref idref="Prom.xhtml"/>
+  </spine>
+  <guide>
+    <reference href="Text/Cover.xhtml" title="Couverture" type="cover"/>
+  </guide>
+</package>

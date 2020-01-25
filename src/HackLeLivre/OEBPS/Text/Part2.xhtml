@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+  <title>Partie 2 – Hacker est une nécessité</title>
+  <link href="../Styles/Styles-essai.css" type="text/css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+</head>
+
+<body epub:type="bodymatter" lang="fr" xml:lang="fr">
+  <section epub:type="chapter" aria-labelledby="heading-1" role="doc-chapter">
+    <h1 id="heading-1">Partie 2<br/>
+      Hacker est une&#160;nécessité</h1>
+
+    <p id="para-1">Hacker le code n’est en aucun cas une option, c’est une nécessité.</p>
+
+    <p id="para-2">Hacker le code revient à accepter le résultat le plus proche… mais refuser qu’il ne le soit pas assez.</p>
+
+    <p id="para-3">Hacker le code est parfois le seul moyen d’atteindre un objectif.</p>
+
+    <p id="para-4">Hacker le code implique une certaine forme de réalisme&#160;: nous pourrions nous dire qu’un fragment de code considéré comme «&#160;sécuritaire&#160;» passera plus tard mais nous savons qu’il y a de grandes chances que ce ne soit jamais le cas puisque nous accusons une ultra-dépendance aux moteurs de rendu et applications de lecture.</p>
+
+    <p id="para-5">Mais hacker le code, c’est également reconnaître certaines responsabilités&#160;: il faut savoir quand s’arrêter, déterminer les meilleurs compromis et respecter au plus près son intention.</p>
+
+    <figure class="image-caption" id="fig-1">
+      <img src="../Images/SupportCode.jpg" alt="Le code non supporté par une liseuse d'un côté, le code supporté de l'autre"/>
+
+      <figcaption class="legende">Ce n’est pas parce que certaines choses ne sont pas supportées (à gauche) que nous ne pouvons pas soigner nos livres numériques. Mais une connaissance profonde des appareils de lecture est&#160;nécessaire.</figcaption>
+    </figure>
+
+    <p id="para-6">Les barrières doivent être un moteur pour l’inventivité, mais cette inventivité doit servir les prochains projets (cf. <a href="../Text/Part1.xhtml#modules">modules</a>). Il faut relever les défis qui naissent de chaque projet, voire même de chacun de leurs compromis. Les limitations ne doivent en aucun cas être une raison d’aller voir si l’herbe est plus verte ailleurs (<i>fixed layout,</i> iBooks Author, PDF, app–livre, etc.)&#160;; elle ne l’est de toute façon pas. Nous ne ferions là qu’admettre notre incapacité à inventer pour contourner.</p>
+
+    <p id="para-7">Si nous arrivons presque à atteindre notre objectif, c’est qu’il existe un moyen d’y arriver. Nous devons persévérer puisque nous en sommes à un stade trop avancé pour abandonner. Penser qu’on ne peut pas y arriver, c’est refuser la créativité, le hack du code.</p>
+
+    <p id="para-8">Aussi longtemps que le hack est valide, il ne tient qu’à nous de continuer. Si ça ne passe pas sur telle ou telle app, il faut observer la situation sous un autre angle. Par contre, si ça ne passe pas sur telle ou telle app parce que le support est mauvais ou que les développeurs ont pris une décision clairement arbitraire, il faudra alors songer à prendre la décision arbitraire de les laisser de côté. Après tout, EPUB est un standard, et s’il faut les «&#160;punir&#160;» pour leur faire comprendre et les pousser à améliorer le support du format, alors faisons-le… même avec regret. De toute manière, faire passer tout code partout est illusoire, certaines apps ne respectant même pas les principes de fonctionnement de base de CSS par exemple. Il arrivera un moment où les lecteurs se rendront compte que ce n’est pas l’éditeur qui est à mettre en cause si le rendu du fichier est mauvais, mais bel et bien les développeurs de l’app qu’ils utilisent. Certes, EPUB est un format délicat à gérer (c’est encore plus vrai avec EPUB&#160;3), ce qui explique en partie pourquoi une part importante de l’industrie se tourne vers des SDK (<i>Software Development Kit</i>) tout faits<a href="#note-13" id="appel-13" class="appel" epub:type="noteref" role="doc-noteref">[13]</a>. Mais n’oublions pas que les constructeurs et développeurs peuvent personnaliser sur cette base, et ils ne s’empêchent pas de le faire (<i>overrides,</i> non-support de certaines fonctionnalités basiques ou avancées, etc.).</p>
+
+    <figure class="image-caption" id="fig-2">
+      <img src="../Images/SDK.jpg" alt="Le SDK, une simple base à laquelle on rajoute des couches"/>
+      
+      <figcaption class="legende">Le RMSDK Adobe n’est qu’une base à laquelle développeurs et revendeurs peuvent modifier ou ajouter des&#160;éléments.</figcaption>
+    </figure>
+
+    <p id="para-9">Il ne nous faut pas oublier que les spécifications sont purement théoriques, elles ne sont que des bases sur lesquelles les développeurs feraient presque ce qu’ils ont envie de faire, ce ne sont surtout pas des boîtes closes. <span class="bloc">iBooks,</span> l’application de lecture Apple, par exemple, supportait déjà CSS&#160;3 et les <i>media queries</i> dans EPUB&#160;2. Pas étonnant, dès lors, de constater que plusieurs développeurs ont tiré avantage de la situation pour hacker le code et réaliser des choses impossibles à faire en théorie.</p>
+
+    <p id="para-10">Un des hacks les plus célèbres se propose d’utiliser les <i>media queries</i> afin de soumettre des styles CSS plus élaborés à l’app <span class="bloc">iBooks.</span> Seulement, le RMSDK Adobe, utilisé par quasiment tous les autres acteurs du livre numérique, ne supporte pas les <i>media queries</i> et ignore totalement la feuille de styles où celles-ci se trouvent. La solution consiste donc à utiliser plusieurs feuilles de styles&#160;: une feuille de styles de base compatible RMSDK Adobe, une feuille de styles avancée contenant les <i>media queries</i> pour <span class="bloc">iBooks</span> — on pourra alors même intégrer les feuilles de styles prévues pour la conversion Kindle de cette manière. Indirectement, nous préparons également l’avenir puisqu’il suffira de passer le fichier en EPUB&#160;3 le jour où les <i>media queries</i> seront massivement supportées<a href="#note-14" id="appel-14" class="appel" epub:type="noteref" role="doc-noteref">[14]</a>&#160;; au pire, si un problème se pose, nous n’aurons qu’à enlever les feuilles de styles contenant les <i>media queries.</i></p>
+
+    <p id="para-11">Le hack du code est encore le meilleur moyen de s’assurer certaines fonctionnalités avancées. Il ne faut pas compter sur les organismes en charge du format et attendre qu’ils intègrent ces fonctionnalités dans les spécifications en en décrivant assez précisément le fonctionnement.</p>
+
+    <figure class="image-caption" id="fig-3">
+      <img src="../Images/modernizr.jpg" alt="Page d'accueil du site modernizr, qui permet de contourner les limitations des anciens navigateurs"/>
+
+      <figcaption class="legende">Modernizr ou quand le Java­Script permet de pousser plus loin le Web Design sans pour autant mettre les anciens navigateurs internet de&#160;côté.</figcaption>
+    </figure>
+
+    <p id="para-12">Le hack technique est parfois la condition nécessaire à la réalisation de hacks du fonctionnement éditorial, commercial ou de conception graphique. Le Web repose sur des milliers de hacks imaginés par les développeurs, il faudrait être complètement fou pour penser que ce ne sera pas le cas pour le livre numérique&#160;!<a href="#note-15" id="appel-15" class="appel" epub:type="noteref" role="doc-noteref">[15]</a></p>
+
+    <p id="para-13">Bien sûr, nous devons reconnaître que tout hack de code n’est pas bon à utiliser. C’est pour cette raison que nous devons accepter que le livre doive désormais être débogué.</p>
+
+    <section aria-labelledby="section-1">
+    <h2 id="section-1">Déboguer</h2>
+
+    <p id="para-14">Corriger les bogues, que l’on hack le code ou pas, est primordial. On ne peut ne serait-ce imaginer faire sans puisque, toutes proportions gardées, ne pas déboguer équivaut à lancer une voiture sans s’assurer qu’elle puisse rouler. Leur correction impose par conséquent le temps qu’elle nécessite. Cela peut demander cinq minutes, cela peut nécessiter des heures.</p>
+
+    <p id="para-15">Si les livres numériques sont produits à l’intérieur même de la structure de l’éditeur, le problème pourra directement être réglé lorsqu’il apparaît. La solution sera alors immédiatement mise en place et les ouvrages suivants pourront en bénéficier. Si l’éditeur sous-traite à l’un de ces fameux prestataires exotiques — sans forcément le savoir d’ailleurs, faisant naïvement confiance à un prestataire ayant pignon sur rue —, alors il passera son temps à corriger des livres potentiellement défectueux, contenant toujours les mêmes erreurs, et il y perdra du temps et de l’argent. C’est la raison pour laquelle le choix d’un prestataire est critique pour les structures ne pouvant se permettre de produire elles-mêmes les livres numériques. Les éditeurs anglo-saxons qui ont déjà eu à faire face à ce genre de problème peuvent très largement en témoigner.</p>
+
+    <figure class="image-height" id="fig-4">
+      <img src="../Images/kindleBogue.jpg" alt="Exemple de bogue Kindle"/>
+    </figure>
+
+    <p id="para-16">En pratique, les phases de débogage doivent obligatoirement s’intégrer dans la phase de développement, ce n’est pas quelque chose que l’on fait tout à la fin, sauf si le contenu ne demande pas de prouesse technique majeure (livres simples de type roman). Nous appellerons la phase de développement WIP (<i>Work In Progress</i>) et la phase de débogage WOAF<a href="#note-16" id="appel-16" class="appel" epub:type="noteref" role="doc-noteref">[16]</a> (<i>Working On A Fix</i>). Notre modèle de développement devient alors&#160;:</p>
+
+    <blockquote>
+      <p id="para-17">WIP → bogue → WOAF → WIP → bogue → WOAF → WIP → … → publication</p>
+    </blockquote>
+
+    <p id="para-18">Le <i>fix</i> (ou la solution) ne doit pas être une solution temporaire, mais plutôt une solution pérenne, elle-même testée et éprouvée pour s’assurer qu’elle ne crée pas d’autres bogues, permettant ainsi son emploi sans danger. Il va sans dire que si la solution corrige un bogue créé par le développer lui-même<a href="#note-17" id="appel-17" class="appel" epub:type="noteref" role="doc-noteref">[17]</a>, alors celui-ci devra assainir son code plutôt que d’apposer une rustine qui, par nature, n’est qu’une solution infiniment temporaire vouée à poser des problèmes un jour ou l’autre.</p>
+
+    <p id="para-19">Si ce <i>fix</i> semble trivial mais qu’il met la pérennité du fichier en danger, en demandant par exemple de trop grandes modifications au niveau du marquage HTML — qu’il faudra peut-être modifier plus tard —, alors il faudra essayer d’en trouver un autre. Et si aucun autre <i>fix</i> ne fonctionne, il faudra bien peser l’usage de la première solution, surtout si le bogue trouve davantage sa source dans les moteurs de lecture ou les décisions arbitraires des développeurs de ces moteurs (remplacement des styles du fichier par des styles imposés, nombre partiel de fonctionnalités qui ne sont pas toutes totalement supportées, etc.). Nous ne pouvons nous empêcher de penser ici au bogue des paragraphes longs sur les liseuses Kobo ou l’application Aldiko, très vieux bogue du RMSDK Adobe corrigé depuis plusieurs mois, les solutions permettant de contourner ce bogue ayant des répercussions trop importantes pour être utilisées sans danger…</p>
+
+    <figure class="image-caption" id="fig-5">
+      <img src="../Images/bugAldiko.jpg" alt="Le fameux bug Aldiko et Kobo qui renvoie des paragraphes sur la page-écran suivante en laissant un énorme blanc sur la page où ils devraient se trouver"/>
+
+      <figcaption class="legende">Le bogue des «&#160;paragraphes longs&#160;» sur Aldiko, renvoyés à la page–écran&#160;suivante.</figcaption>
+    </figure>
+
+    <p id="para-20">Encore une fois, il nous faut accepter l’idée que l’inconfort est salvateur. Le confort mène à la routine, il ne permet pas de dépasser nos propres conceptions, il ne nous pousse pas à faire mieux. Or, EPUB&#160;3 est l’inconfort total, pour la simple et bonne raison que le support du format EPUB&#160;3 ne sous-entend pas le support complet de ce que les spécifications EPUB&#160;3 englobent (CSS, HTML, Java­Script, fonctionnalités avancées). Tellement de choses sont de fait optionnelles que nous ne pouvons nous permettre de croire que nous pourrons nous passer de hacks. Et, de toute manière, une fois que nous avons compris que le hack du fonctionnement de création graphique est intimement lié au hack du fonctionnement technique (le code mais pas que), alors nous pouvons sérieusement penser hacker le fonctionnement éditorial puis commercial.</p>
+    </section>
+
+    <section aria-labelledby="section-2">
+    <h2 id="section-2">Le hack n’est pas que&#160;technique</h2>
+
+    <p id="para-21">Il ne faut pas penser le débogage uniquement dans le domaine technique, mais aussi dans le domaine éditorial et commercial. Si nous créons de nouveaux modèles, alors il faudra bien les corriger et les perfectionner. Et nous utiliserons sensiblement le même modèle de développement.</p>
+
+    <p id="para-22">Par extension, le hack, qui semble un terme bien technique de prime abord, est un concept que nous devons porter en dehors de sa sphère naturelle de signification. Si nous considérons le hack pour ce qu’il est dans son sens premier, nous devons garder à l’esprit que l’important est de détourner. Nous pouvons certes détourner le code, détourner les couvertures, détourner — et contourner — le flux, mais nous pouvons également détourner le contenu, détourner son éditorialisation, détourner les moyens de le distribuer et de le monétiser.</p>
+
+    <p id="para-23">Lorsque nous hackons le livre sur l’un de ses plans de fonctionnement, il nous faut bien comprendre que nous changeons un ou plusieurs rouages de la machine de publication. Autrement dit, certains hacks ne pourront s’envisager sans changer d’autres rouages de cette machine, sinon elle ne fonctionnera pas de manière optimale, voire pas du tout.</p>
+
+    <figure class="image" id="fig-6">
+      <img src="../Images/rouages.jpg" alt="Rouages dans un écran d'ordinateur"/>
+    </figure>
+
+    <p id="para-24">En réalité, si nous hackons le livre significativement, dans les domaines technique et éditorial par exemple, ce ne serait pas une mauvaise idée de créer une machine de publication plus simple, plus adaptée, et répondant aux besoins induits par le hack. L’éditeur devra en pratique penser à faire naître une start-up au sein de sa propre structure, une sorte de laboratoire de recherche et développement éditorial, quasiment replié sur lui-même pour assurer sa propre survie dans un premier temps, avant de s’ouvrir pour répandre sa culture au sein de l’entreprise. En d’autres termes, l’éditeur doit imaginer s’hacker lui-même, à l’image des quelques géants de la haute technologie qui ont entrepris cette transformation pour rester au sommet.</p>
+
+    <p id="para-25">Une chose est sûre, si les éditeurs ne daignent pas hacker le livre, alors d’autres le feront — et ils le font déjà. L’éditeur ne ferait là que prendre un retard impossible à rattraper et se retrouverait bien malgré lui à racheter des acteurs «&#160;compatibles numérique&#160;» pour les ingérer dans un environnement éditorial peu propice à les accueillir. Si, au contraire, l’éditeur prend conscience qu’il doit faire évoluer sa culture, alors il pourra entamer la conquête numérique avec les bons outils.</p>
+    </section>
+
+    <section aria-labelledby="section-3">
+    <h2 id="section-3">Nous sommes tous une&#160;start-up</h2>
+
+    <p id="para-26">Pour un éditeur, innover revient à éliminer les barrières qui ne permettent pas de reconnaître la valeur des idées puis de les adapter pour répondre au mieux à des besoins. Le problème est certes structurel — surtout dans les grandes structures —, mais il est surtout et avant tout philosophique. Nous ne pouvons clairement pas mettre le manque d’innovation sur le dos d’une quelconque sécheresse d’idées. Les éditeurs, de par leur nature même, génèrent des idées d’une manière exceptionnelle. Après tout, nous pourrions dire que générer des idées et les mettre à disposition du public est leur cœur de métier.</p>
+
+    <p id="para-27">Et pourtant…</p>
+
+    <p id="para-28">Combien de vraies innovations (ou de hacks, comme nous nous amusons à les appeler dans cet ouvrage) ont-elles été pensées et lancées sur le marché par les éditeurs de livres&#160;? Assurément très peu puisque les éditeurs rechignent déjà à innover avec les outils que des revendeurs ou développeurs mettent à leur disposition.</p>
+
+    <figure class="image-caption" id="fig-7">
+      <img src="../Images/desert-iba.jpg" alt="Capture d'écran de la recherche iBooks Author dans l'iBookStore"/>
+
+      <figcaption class="legende">iBooks Author, une innovation clé en main proposée par Apple, a été très peu utilisée par les éditeurs jusqu’ici. Il faut dire que les volumes de ventes des livres dans ce format sont assez&#160;mauvais…</figcaption>
+    </figure>
+
+    <p id="para-29">Le problème est qu’une idée doit traverser la hiérarchie de l’organisme de long en large et qu’elle doit être performante tout de suite. Rapportera-t-elle suffisamment d’argent à court terme&#160;? Fonctionnera-t-elle à coup sûr&#160;? Rompt-elle trop avec l’image que les lecteurs se font de l’éditeur&#160;? Risque-t-elle de faire de l’ombre aux autres produits&#160;? Autant de portes qui ne font que s’entrouvrir et se refermer, faisant littéralement tourner l’éditeur dans un cercle vicieux.</p>
+
+    <p id="para-30">Et si nous faisions en sorte qu’au lieu de mourir, ces idées évoluent&#160;?</p>
+
+    <p id="para-31">Faisons régulièrement passer ces idées devant une commission constituée de responsables éditoriaux, de techniciens, de développeurs, de designers et de marketeurs, qui se demanderont alors comment adapter l’idée en fonction des besoins (ou envies) des lecteurs. Et ne présentons pas seulement nos idées, mais également nos inspirations (qu’elles se trouvent dans le domaine du livre ou pas), nos projets personnels et les apps et services que nous utilisons. S’il existe une réelle opportunité, nous le saurons.</p>
+
+    <figure class="image" id="fig-8">
+      <img src="../Images/IdeesVrac.jpg" alt="Bouts de papier éparpillés"/>
+    </figure>
+
+    <p id="para-32">Mais attention, cela ne pourra pas fonctionner si nous ne nous considérons pas les idées comme des matériaux bruts. La quantité est plus importante que la qualité dans ce processus&#160;: il faut ratisser large et ne pas aller au fond des choses, il ne faut pas sur-analyser les opportunités, il faut aller jeter un coup d’œil ailleurs, en dehors du livre. Que pouvons-nous apprendre des éditeurs de contenus (plateformes de blog, éditeurs Web, etc.), des apps mobiles, des services en ligne&#160;? Ne nous enfermons pas dans un écosystème «&#160;livre&#160;» qui n’arrive pas foncièrement innover par lui-même.</p>
+
+    <p id="para-33">Ne nous évertuons pas à tester (et valider) aussitôt les idées sélectionnées, prenons plutôt le temps de jouer avec elles. En effet, l’innovation se fait souvent d’une manière que nous ne prévoyions pas. Laissons les utilisateurs–lecteurs s’approprier l’idée et observons ce qu’ils en font, ne cherchons pas à la valider avec des questionnaires ou des enquêtes de satisfaction<a href="#note-18" id="appel-18" class="appel" epub:type="noteref" role="doc-noteref">[18]</a>. À ce stade, ce sont les utilisateurs qui doivent hacker. Il n’est pas inutile de rappeler que les entreprises de la Silicon Valley ne sont pas devenues des succès du jour au lendemain, la plupart d’entre elles ont totalement changé de direction au moins une fois. Elles ont pivoté. Au départ, Twitter n’était qu’un service d’abonnement à des podcasts, Groupon était un site de <i>crowdfunding,</i> <span class="bloc">PayPal</span> ne visait l’échange d’argent qu’entre des Palm Pilot.</p>
+
+    <figure class="image-height" id="fig-9">
+      <img src="../Images/Data.jpg" alt="Colonnes de données à analyser"/>
+    </figure>
+
+    <p id="para-34">Une fois que les utilisateurs auront suffisamment expérimenté les idées, il conviendra d’en tirer des conclusions. Récupérons toutes les données, analysons-les et racontons-les devant notre «&#160;comité d’innovation&#160;». Parfois, il faudra leur raconter deux histoires&#160;: l’ancienne histoire, pour les convaincre que ce n’est pas la bonne voie, et la nouvelle histoire, pour leur montrer comment les utilisateurs–lecteurs ont répondu à l’idée (et par conséquent, l’innovation) et l’ont détournée, déterminer quels sont les besoins auxquels l’idée propose une solution et si cela est assez significatif pour continuer à la développer.</p>
+
+    <p id="para-35">Tout cela ne peut se faire sans considérer que tout est prototype, y compris sa propre maison d’édition. La recherche, bien malgré elle, constitue une force qui tue aujourd’hui des idées et innovations. Il faut qu’elle retrouve du sens et les aide à évoluer, survivre et prospérer. Il nous faut simplement désapprendre comment nous gérons l’innovation. Or, les éditeurs de livres, moins concernés par la recherche et le développement, partent avec un avantage certain puisqu’ils ont peu à désapprendre et beaucoup à mettre en place. Mais il ne faudra pas traîner puisque certains innovent déjà dans plusieurs domaines.</p>
+    </section>
+
+    <section aria-labelledby="section-4">
+    <h2 id="section-4">Le hack éditorial</h2>
+
+    <p id="para-36">Comme nous l’avons souligné plus tôt, Amazon a déjà hacké le fonctionnement éditorial du livre, en faisant passer le blog dans l’environnement «&#160;officiel&#160;» de l’édition (le kiosque et la librairie Kindle) mais, surtout, en lançant le programme <i>Kindle Singles.</i></p>
+
+    <p id="para-37"><i>Singles</i> renvoie aux singles dans le domaine de la musique, ces fameux CD contenant 2 ou 3 titres<a href="#note-19" id="appel-19" class="appel" epub:type="noteref" role="doc-noteref">[19]</a> d’un artiste ou d’un groupe et vendus à un prix abordable. Les <i>Kindle Singles</i> sont donc des formats courts (entre 5000 et 30&#160;000 mots), aux contenus originaux puisqu’ils ne doivent pas avoir été publiés dans d’autres formats ou sur le Web, et vendus entre $0.99 et $4.99.</p>
+
+    <p id="para-38">Peu le savent, mais <i>Singles</i> est en quelque sorte la réincarnation d’un programme lancé en 2005, <i>Amazon Shorts,</i> et qui n’a pas connu un succès phénoménal. Les essais, nouvelles et extraits des livres d’auteurs sélectionnés étaient alors vendus 49&#160;cents et distribués en ligne (HTML), par e-mail et en PDF. Ou comment retravailler un concept pour le rendre viable…</p>
+
+    <p id="para-39">Les <i>Singles</i> sont sélectionnés par David Blum, ancien rédacteur en chef du <cite>Village Voice,</cite> qui aide également à éditer le texte si besoin est. L’idée est d’exprimer une idée dans une longueur naturelle.</p>
+
+    <p id="para-40">Le fait est que même si Amazon se place comme coéditeur de chaque livre, il se retrouve bel et bien seul et unique éditeur de la collection <i>Singles</i>&#160;: il a imaginé le concept, il sélectionne les textes qui intègrent cette collection, il décide de la fourchette de prix dans laquelle ils seront vendus, il utilise ses propres outils marketing pour en faire la promotion.</p>
+
+    <figure class="image-caption" id="fig-10">
+      <img src="../Images/blog-Kindle.jpg" alt="Accueil du blog Kindle Post"/>
+
+      <figcaption class="legende">Le blog Kindle Post, où Amazon peut facilement promouvoir son catalogue et mettre en avant auteurs et livres exclusifs à&#160;Kindle.</figcaption>
+    </figure>
+
+    <p id="para-41">Cette collection au succès certain (plusieurs millions de titres vendus depuis son lancement il y a plus de deux ans) semble être née du simple constat que le numérique permet de publier des formats courts qu’il n’aurait pas ou peu<a href="#note-20" id="appel-20" class="appel" epub:type="noteref" role="doc-noteref">[20]</a> été rentable de publier en papier. Nous tenons là l’exemple même du hack de fonctionnement éditorial puisque nous cherchons à publier tous les contenus que nous n’aurions pas publiés auparavant.<a href="#note-21" id="appel-21" class="appel" epub:type="noteref" role="doc-noteref">[21]</a> D’abord limité à la non-fiction, la collection s’est d’ailleurs ouverte à la fiction il y a peu, signe que tout va pour le mieux et que le hack en valait réellement la peine. Des éditeurs comme Hachette ou Random House et des auteurs reconnus comme Stephen King ou Nick Hornby en ont bien compris l’intérêt et participent d’ailleurs grandement au succès de <i>Singles.</i></p>
+
+    <p id="para-42">Remarquons que <i>Singles</i> ne repose sur aucun hack de fonctionnement technique ou de conception graphique&#160;: on n’a pas cherché à réaliser des mini guides pratiques invitant à la consultation non linéaire à l’aide d’un système de navigation interne, on n’a pas adopté un format de couverture carré pour rappeler les singles de musique, etc. Cela n’est pas si étonnant puisque nous nous trouvons dans un écosystème «&#160;livre&#160;»&#160;: ces <i>Singles</i> sont voués à intégrer l’écosystème Kindle, ce sont des livres Kindle qui seront lus la plupart du temps sur des liseuses Kindle. Inutile, donc, d’en repenser la forme pour les adapter à des usages spécifiques.</p>
+
+    <p id="para-43">Le caractère purement éditorial du hack de la collection <i>Singles</i> a permis de faciliter l’arrivée massive de nouveaux acteurs, dont des éditeurs spécialisés dans le format ainsi que les éditeurs de presse. Nous ne pouvons que remarquer que les journaux anglo-saxons se sont très largement engagés dans cette brèche. <cite>The&#160;Boston Globe,</cite> <cite>The New&#160;York Times,</cite> <cite>The&#160;Guardian,</cite> <cite>The Los&#160;Angeles Times</cite> et bien d’autres encore n’ont pas hésité un seul instant à expérimenter la publication dans ce format, particulièrement adapté au journalisme de forme longue (<i>long form</i>) qui semble aujourd’hui renaître sur le Web. Or, dans certains cas, on ne publie pas un article déjà écrit, on le «&#160;commande&#160;».</p>
+
+    <figure class="image-caption" id="fig-11">
+      <img src="../Images/Matter-site.jpg" alt="Page d'accueil de Matter"/>
+
+      <figcaption class="legende">Le site de Matter invite les visiteurs à acheter les Singles de l’éditeur ou à&#160;s’abonner.</figcaption>
+    </figure>
+
+    <p id="para-44"><cite>Matter</cite> ou <cite>The&#160;Magazine,</cite> par exemple, missionnent parfois des journalistes, des photographes ou des designers. Ceux-ci cherchent à écrire le meilleur article ou essai possible sur un sujet prédéfini.</p>
+
+    <p id="para-45">Penser les livres avant qu’ils n’aient été écrits&#160;? Vraiment&#160;?</p>
+
+    <p id="para-46">C’est ce que l’éditeur Hyperink fait depuis un certain temps, poussant peut-être le concept un peu trop loin en utilisant des algorithmes pour déterminer les sujets — extrêmement précis — des livres qu’il va publier. Il trouvera ensuite les spécialistes pour les écrire… ou pour réaliser une interview avec un journaliste free-lance engagé par Hyperink afin de l’écrire à leur place.</p>
+
+    <p id="para-47">Pouvons-nous imaginer qu’un jour des outils en ligne permettent à plusieurs auteurs de travailler sur un livre dont le sujet aura été commandé par l’éditeur&#160;?</p>
+    </section>
+
+    <section aria-labelledby="section-5">
+    <h2 id="section-5">Le hack commercial</h2>
+
+    <p id="para-48">Pour peu que les éditeurs investissent totalement les niches, alors oui, nous pouvons imaginer que les éditeurs puissent décider des sujets de certains des livres qu’ils souhaitent publier. Ils ne proposeront plus, ils disposeront&#160;: ils publieront ce que les lecteurs demandent. Seulement, à l’heure du <i>big data,</i> il devient extrêmement facile de savoir ce que les lecteurs demandent, et il serait presque illogique que des éditeurs n’en tirent pas avantage.</p>
+
+    <p id="para-49">Le hack commercial qui repose sur les niches implique que l’éditeur s’étende dans tous les domaines, multipliant les ouvrages afin de rentabiliser sur le volume vendu. On vend quelques exemplaires de chaque livre, mais on propose plusieurs centaines ou plusieurs milliers de références à la vente. On adopte aussi par là le modèle de longue traîne.</p>
+
+    <figure class="image-caption" id="fig-12">
+      <img src="../Images/LongueTraine.jpg" alt="Illustration de la longue traîne, on vend beaucoup sur quelques titres, on vend quelques exemplaires d'un catalogue volumineux"/>
+
+      <figcaption class="legende">La longue traîne.</figcaption>
+    </figure>
+
+    <p id="para-50">Et si nous allions plus loin dans le hack&#160;? Si l’éditeur de livres s’imaginait aussi comme un éditeur de contenus&#160;?</p>
+
+    <p id="para-51">Il pourrait vendre au chapitre (non-fiction) ou à la nouvelle. Il pourrait proposer aux lecteurs de produire eux-mêmes leurs livres, en leur proposant de compiler des contenus soigneusement édités mais pensés comme indépendants ou interdépendants. Bien évidemment, il convient de ne pas faire n’importe quoi dans le domaine, mais pour les contenus de non-fiction, nous pouvons certainement faire les choses intelligemment et proposer un système où le lecteur édite sans que l’éditeur ne perde sa raison d’être.</p>
+
+    <p id="para-52">Cela permettrait également à l’éditeur de vendre des contenus qui ne l’auraient pas été normalement, soit parce qu’ils ne sont pas ou plus disponibles à la vente, soit parce qu’ils sont trop courts, soit parce qu’ils ne sont pas rentables (même en numérique), et ainsi de suite. L’idée n’est pas de penser ici tous les livres comme une énorme base de données, mais seulement ceux qui permettent cette conception, puis de leur ajouter des contenus additionnels et de les mettre à disposition des lecteurs pour compilation.</p>
+
+    <figure class="image-caption" id="fig-13">
+      <img src="../Images/WikiLiseuse.jpg" alt="Wikipedia dans une liseuse" class="w70"/>
+
+      <figcaption class="legende">Wikipedia dans une liseuse, ce n’est plus un fantasme.</figcaption>
+    </figure>
+
+    <p id="para-53">Le commerce, en général, se tourne indubitablement vers la personnalisation. Les lecteurs compilent déjà les contenus sur le Web à l’aide de services comme Pocket, Readability ou <i>Send to Kindle.</i> Il faut prendre ces pratiques en considération et réfléchir à comment les intégrer au modèle économique du livre si elles peuvent se révéler intéressantes. Le fait est que si nous ne le faisons pas, alors nous pourrons bientôt nous retrouver en concurrence directe avec les contenus du Web. Wikipedia n’a pas attendu et propose un outil permettant aux visiteurs de compiler les entrées qui les intéressent et de créer un livre numérique totalement personnalisé. Si ce genre d’outils se démocratise sur le Web, le risque est que les lecteurs migrent demain leur temps de lecture vers des contenus «&#160;livre numérique&#160;» qui ne sont pas publiés par les éditeurs de livres et qu’ils prennent l’habitude de ne plus se fournir dans leurs catalogues. Les éditeurs ont déjà fort à faire avec les classiques gratuits du domaine public, ils ne doivent en aucun cas négliger les nouvelles pratiques qui naissent devant leurs yeux. Ils doivent hacker leur propre fonctionnement commercial.</p>
+
+    <p id="para-54">Nous n’invitons bien évidemment pas les éditeurs à ne faire que ça, mais simplement à imaginer des modèles alternatifs qui pourraient se révéler complémentaires. Le numérique dispose de son propre écosystème, de ses usages et de son économie bien particulière. Si les lecteurs cherchent le prix bas en numérique, alors autant proposer des contenus qui permettent ces prix abordables plutôt que de se plaindre que le livre ne vaudra bientôt plus rien à cause du numérique. Ce n’est pas remettre en cause le roman ou, plus généralement, le livre sous sa forme traditionnelle, que de parier sur de nouveaux modèles adaptés au numérique, bien au contraire. Cette démarche est juste saine.</p>
+
+    <figure class="image-caption" id="fig-14">
+      <img src="../Images/abo.jpg" alt="Page d'accueil de Byliner, promouvant l'abonnement mensuel"/>
+
+      <figcaption class="legende">Byliner, un éditeur spécialisé dans le format court (long form et Singles), propose un abonnement mensuel à ses lecteurs, et le met bien en avant sur son site&#160;web.</figcaption>
+    </figure>
+
+    <p id="para-55">Et si nous regardions de plus près les moyens de monétiser les contenus, ne pourrions-nous pas envisager l’abonnement&#160;?</p>
+
+    <p id="para-56">L’éditeur pourrait par exemple se permettre de lancer un magazine littéraire par abonnement, où il présentera aussi bien des textes d’auteurs reconnus que de nouveaux talents — donnons-nous une chance de régler ce fameux problème français du «&#160;premier roman&#160;»… de moins en moins nombreux d’une année à l’autre. C’est ce qu’est <span class="bloc">Nerval.fr</span> chez <span class="bloc">Publie.net,</span> un magazine littéraire de fiction et de non-fiction, accessible pour 15&#160;€ par an.</p>
+
+    <p id="para-57">L’éditeur pourrait oser les collections numériques par abonnement. Pour 4 ou 5&#160;euros par mois, le lecteur recevrait un livre court (un single) toutes les deux semaines. Cela pourrait également être un moyen de publier des œuvres que l’on ne trouve plus en papier, le système d’abonnement autofinancerait alors la numérisation de ces ouvrages.</p>
+
+    <p id="para-58">L’éditeur pourrait également hacker l’abonnement et casser le mur qui le sépare du prix unitaire en donnant accès à des livres en cours d’écriture. Le contenu du livre augmenterait au fur et à mesure — il n’est nullement question de donner accès à un brouillon —, tout comme le prix. C’est ce <span class="bloc">qu’O’Reilly</span> a expérimenté avec <cite>Every Book Is a&#160;start-up,</cite> l’éditeur encourageant les lecteurs à donner leur opinion tout au long de la publication itérative. Bien évidemment, une fois le livre acheté, les lecteurs recevaient les mises à jour, ils n’avaient pas à payer la différence. Le seul problème, c’est que la chaîne de distribution des livres numériques n’a pas été pensée pour les mises à jour (annotations perdues, mises à jour non répercutées par certains revendeurs). La situation parait complètement stupide vu les possibilités du numérique… Il faudra donc hacker le fonctionnement technique pour réaliser ce genre d’expérience…</p>
+
+    <figure class="image-height" id="fig-15">
+      <img src="../Images/EverybookStartup.jpg" alt="Couverture de Every Book is a start-up"/>
+    </figure>
+
+    <p id="para-59">Nous le constatons, le hack commercial implique des hacks éditoriaux et techniques puisqu’il faut repenser autant le contenu que les moyens de le distribuer — sans oublier qu’il faudra réfléchir à comment le promouvoir. Bref, nous nous retrouvons à un niveau où l’éditeur gagne davantage à repenser qu’adapter.</p>
+    </section>
+    
+    <hr class="filet"/>
+
+    <section aria-label="Notes de fin de chapitre" epub:type="endnotes" role="doc-endnotes">
+	<ol class="endnotes">
+      <li class="footnote" id="note-13" epub:type="endnote" role="doc-endnote"><a href="#appel-13" class="note">[13]</a> Adobe RMSDK pour EPUB&#160;2, probablement Readium SDK pour EPUB&#160;3.</li>
+
+      <li class="footnote" id="note-14" epub:type="endnote" role="doc-endnote"><a href="#appel-14" class="note">[14]</a> Et rien ne nous dit non plus que les moteurs de rendu EPUB&#160;3 ne pourront pas les supporter sans même avoir à mettre à jour le fichier EPUB&#160;2.</li>
+
+      <li class="footnote" id="note-15" epub:type="endnote" role="doc-endnote"><a href="#appel-15" class="note">[15]</a> Parfois, hacker le code est même le seul moyen de contourner des bogues de certains logiciels de lecture…</li>
+
+      <li class="footnote" id="note-16" epub:type="endnote" role="doc-endnote"><a href="#appel-16" class="note">[16]</a> Nous concédons bien volontiers que la chose peut sonner comme une onomatopée qu’un chien dépité emploierait.</li>
+
+      <li class="footnote" id="note-17" epub:type="endnote" role="doc-endnote"><a href="#appel-17" class="note">[17]</a> Sauf exception, l’ajout de «&#160;!important&#160;» pour une propriété CSS est un signal qui tend par exemple à démontrer que le bogue a été créé par le développeur.</li>
+
+      <li class="footnote" id="note-18" epub:type="endnote" role="doc-endnote"><a href="#appel-18" class="note">[18]</a> De toute manière, nous pouvons toujours orienter ces questionnaires et enquêtes afin d’obtenir des sondés les réponses que nous souhaitons entendre.</li>
+
+      <li class="footnote" id="note-19" epub:type="endnote" role="doc-endnote"><a href="#appel-19" class="note">[19]</a> Souvent, un morceau de l’album accompagné d’un remix ou d’un inédit.</li>
+
+      <li class="footnote" id="note-20" epub:type="endnote" role="doc-endnote"><a href="#appel-20" class="note">[20]</a> Nous pourrions ici citer l'exception <cite>Indignez-vous&#160;!</cite></li>
+
+      <li class="footnote" id="note-21" epub:type="endnote" role="doc-endnote"><a href="#appel-21" class="note">[21]</a> Prochaine étape&#160;: monétiser la fan fiction avec <i>Kindle Worlds.</i> Amazon s’occupe de passer les accords commerciaux avec les ayants droit pour rendre légales les publications de ce type et rétribue aussi bien les auteurs des <i>fan fictions</i> que ceux des contenus originaux.</li>
+	</ol>
+    </section>
+  </section>
+</body>
+</html>
