@@ -2,7 +2,6 @@
   "name": "edito-design-hack",
   "version": "1.0.0",
   "description": "Dépôt public des livres de la série Édito|Design|Hack",
-  "main": "package.js",
   "scripts": {
     "package": "node ./make.js"
   },
