@@ -18,7 +18,9 @@ Tout d’abord, un grand merci à Julien Simon, co-auteur de *L’Éditorial num
 
 S’ils sont désormés disponibles en Creative Commons, c’est parce qu’une réédition demanderait un travail de mise à jour considérable : beaucoup de projets ont évolué, quelques idées se sont vues confirmer quand d’autres expérimentations n’ont pas su trouver leur public, quelques start-ups ont bien grandi alors que d’autres ont dû fermer.
 
-Ces essais ayant été écrits en 2013, il conviendra donc au lecteur interessé de traverser certains contenus avec prudence.
+En outre, après avoir bien voyagé dans le livre numérique (designer puis créateur d’outils, développeur d’app de lecture, etc.), certaines perspectives de l’auteur de 2013 ne sont plus forcément les mêmes qu’aujourd’hui.
+
+Pour ces raisons, il conviendra donc au lecteur interessé de traverser certains contenus avec prudence.
 
 ## Package
 
