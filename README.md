@@ -1,13 +1,37 @@
 # edito-design-hack
 
-Dépôt public des livres de la série Édito|Design|Hack
+Dépôt public des livres de la série “Édito|Design|Hack”
+
+## Licence
+
+CC-BY-NC-SA 4.0 (voir [LICENSE](LICENSE)).
+
+## Téléchargement
+
+1. [L’Éditorial numérique](https://github.com/JayPanoz/edito-design-hack/raw/master/dist/LEditorialNumerique.epub)
+2. [Design du livre numérique](https://github.com/JayPanoz/edito-design-hack/raw/master/dist/DesignDuLivreNumerique.epub)
+3. [Hack le livre](https://github.com/JayPanoz/edito-design-hack/raw/master/dist/HackLeLivre.epub)
+
+## Disclaimer
+
+Tout d’abord, un grand merci à Julien Simon, co-auteur de *L’Éditorial numérique*, pour avoir donné son accord au partage de ces essais.
+
+S’ils sont désormés disponibles en Creative Commons, c’est parce qu’une réédition demanderait un travail de mise à jour considérable : beaucoup de projets ont évolué, quelques idées se sont vues confirmer quand d’autres expérimentations n’ont pas su trouver leur public, quelques start-ups ont bien grandi alors que d’autres ont dû fermer.
+
+Ces essais ayant été écrits en 2013, il conviendra donc au lecteur interessé de traverser certains contenus avec prudence.
 
 ## Package
+
+Lors de votre première utilisation, installez les dépendences avec:
+
+```
+npm install
+```
+
+Puis, après avoir modifié les `src`, à la racine de ce dossier:
 
 ```
 npm run package
 ```
 
-## Licence
-
-CC-BY-NC-SA 4.0 (voir [LICENSE](LICENSE)).
+Le script mettra automatiquement à jour les fichiers EPUB dans le dossier `dist`.
