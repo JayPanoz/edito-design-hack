@@ -30,7 +30,13 @@ Lors de votre première utilisation, installez les dépendences avec:
 npm install
 ```
 
-Puis, après avoir modifié les `src`, à la racine de ce dossier:
+Puis, après avoir modifié les `src`, vérifiez que les fichiers passent EPUBCheck:
+
+```
+npm test
+```
+
+Enfin:
 
 ```
 npm run package
