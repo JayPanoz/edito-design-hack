@@ -16,7 +16,7 @@ CC-BY-NC-SA 4.0 (voir [LICENSE](LICENSE)).
 
 Tout d’abord, un grand merci à Julien Simon, co-auteur de *L’Éditorial numérique*, pour avoir donné son accord au partage de ces essais.
 
-S’ils sont désormés disponibles en Creative Commons, c’est parce qu’une réédition demanderait un travail de mise à jour considérable : beaucoup de projets ont évolué, quelques idées se sont vues confirmer quand d’autres expérimentations n’ont pas su trouver leur public, quelques start-ups ont bien grandi alors que d’autres ont dû fermer.
+S’ils sont désormais disponibles en Creative Commons, c’est parce qu’une réédition demanderait un travail de mise à jour considérable : beaucoup de projets ont évolué, quelques idées se sont vues confirmer quand d’autres expérimentations n’ont pas su trouver leur public, quelques start-ups ont bien grandi alors que d’autres ont dû fermer.
 
 En outre, après avoir bien voyagé dans le livre numérique (designer puis créateur d’outils, développeur d’app de lecture, etc.), certaines perspectives de l’auteur de 2013 ne sont plus forcément les mêmes qu’aujourd’hui.
 
