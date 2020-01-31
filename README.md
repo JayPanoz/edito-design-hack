@@ -18,11 +18,19 @@ Tout d’abord, un grand merci à Julien Simon, co-auteur de *L’Éditorial num
 
 S’ils sont désormais disponibles en Creative Commons, c’est parce qu’une réédition demanderait un travail de mise à jour considérable : beaucoup de projets ont évolué, quelques idées se sont vues confirmer quand d’autres expérimentations n’ont pas su trouver leur public, quelques start-ups ont bien grandi alors que d’autres ont dû fermer.
 
-En outre, après avoir bien voyagé dans le livre numérique (designer puis créateur d’outils, développeur d’app de lecture, etc.), certaines perspectives de l’auteur de 2013 ne sont plus forcément les mêmes qu’aujourd’hui.
+En outre, après avoir bien voyagé dans le livre numérique (designer puis créateur d’outils, développeur d’app de lecture, etc.), certaines perspectives de l’auteur de 2013 ne sont plus forcément les mêmes aujourd’hui.
 
 Pour ces raisons, il conviendra donc au lecteur interessé de traverser certains contenus avec prudence.
 
 ## Package
+
+Vous pouvez soit créer et tester les fichiers EPUB manuellement, soit utiliser les scripts npm prédéfinis.
+
+### Manuellement
+
+Merci de valider les fichiers avec [EPUBCheck](https://github.com/w3c/epubcheck) et de les tester avec [DAISY Ace](https://daisy.github.io/ace/).
+
+### NodeJS/npm
 
 Lors de votre première utilisation, installez les dépendences avec:
 
@@ -36,7 +44,7 @@ Puis, après avoir modifié les `src`, vérifiez que les fichiers passent EPUBCh
 npm test
 ```
 
-Enfin:
+Ensuite:
 
 ```
 npm run package
