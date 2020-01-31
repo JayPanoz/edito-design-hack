@@ -43,3 +43,11 @@ npm run package
 ```
 
 Le script mettra automatiquement à jour les fichiers EPUB dans le dossier `dist`.
+
+Vous pourrez enfin tester l’accessibilité de ces fichiers avec [DAISY Ace](https://daisy.github.io/ace/):
+
+```
+npm run ace
+```
+
+Des rapports seront créés/écrasés dans `reports/ace/nom-du-fichier`.

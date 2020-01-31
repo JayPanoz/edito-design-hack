@@ -1,10 +1,14 @@
 {
   "name": "edito-design-hack",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Dépôt public des livres de la série Édito|Design|Hack",
   "scripts": {
     "package": "node ./make.js",
-    "test": "node ./check.js"
+    "test": "node ./check.js",
+    "ace": "npm run ace:edito && npm run ace:design && npm run ace:hack",
+    "ace:design": "ace --force --subdir --outdir ./reports/ace ./dist/DesignDuLivreNumerique.epub",
+    "ace:edito": "ace --force --subdir --outdir ./reports/ace ./dist/LEditorialNumerique.epub",
+    "ace:hack": "ace --force --subdir --outdir ./reports/ace ./dist/HackLeLivre.epub"
   },
   "repository": {
     "type": "git",
@@ -24,6 +28,7 @@
   },
   "homepage": "https://github.com/JayPanoz/edito-design-hack#readme",
   "devDependencies": {
+    "@daisy/ace": "^1.1.1",
     "chalk": "^3.0.0",
     "epub-zip": "0.0.1",
     "epubchecker": "^4.2.2"
