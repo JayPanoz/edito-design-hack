@@ -30,7 +30,7 @@
   "devDependencies": {
     "@daisy/ace": "^1.1.1",
     "chalk": "^3.0.0",
-    "epub-zip": "0.0.1",
+    "epub-zip": "github:JayPanoz/epub-zip",
     "epubchecker": "^4.2.2"
   }
 }
