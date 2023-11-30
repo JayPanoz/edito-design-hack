@@ -31,6 +31,6 @@
     "@daisy/ace": "^1.1.1",
     "chalk": "^3.0.0",
     "epub-zip": "github:JayPanoz/epub-zip",
-    "epubchecker": "^4.2.2"
+    "epubchecker": "^5.1.0"
   }
 }
